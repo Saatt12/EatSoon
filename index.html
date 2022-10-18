@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <title>Eat Soon</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div class="container-logo d-flex justify-content-start align-items-center">
+                    <div class="navbar-brand">
+                        <img src="img/hamburguesa-con-queso.png" alt="Avatar Logo" style="width:40px;">
+                        <a href="/" class="text-logo-header">EatSoon</a>
+                    </div>
+                </div>
+                <div class="container-navbar">
+                    <nav class="nav-header">
+                        <label for="menu" class="nav__label">
+                            <img src="img/menu_sidebar.svg" class="nav__img" alt="">
+                        </label>
+                        <input type="checkbox" id="menu" class="nav__input">
+
+                        <ul class="main-menu">
+
+                            <li class="menu-item">
+                                <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
+                                <a href="/" id="nav-iniciar">Inicia Sesion</a>
+                            </li>
+                            <li class="menu-item">
+                                <i class="bi-box-arrow-in-right" style="font-size: 1.5rem; color: white;"></i>
+                                <a href="/" id="nav-crear">Crear cuenta</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="wrap-contenido__hero">
+                    <div class="contenido__hero">
+                        <h2>¿Que te apetece?</h2>
+                        <p>Búscalo aquí</p>
+                    </div>
+                    <form>
+                        <input type="text" class="u-full-width" placeholder="¿Que te gustaria probar?" id="buscador">
+                        <input type="submit" class="submit__buscador">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="barra__container">
+        <div class="columna__barra">
+            <img src="img/icons1.png" alt="" style="width: 60px;">
+            <p>Distintos alimentos<br>
+                Distintas categorias</p>
+        </div>
+        <div class="columna__barra">
+            <img src="img/icons2.png" alt="" style="width: 60px;">
+            <p>Consigue lo que buscas<br>
+                Antes de que caduque</p>
+        </div>
+        <div class="columna__barra">
+            <img src="img/icons3.png" alt="" style="width: 60px;">
+            <p>Todos los productos<br>
+                A mitad de precio</p>
+        </div>
+    </div>
+
+    <div class="container__platillos bg-dark">
+        <div class="titulo__platillos">
+            <h1 class="encabezado">Ofertas del dia</h1>
+        </div>
+
+        <div class="wrap column-4 columns">
+            <!-- fila1 -->
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- fila2 -->
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fila3-->
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-rest" style="background: url(img/hamburguesa.png) center; background-size: cover;">
+                <div class="wrap-text_tarjeta-rest">
+                    <h3>Producto</h3>
+                    <div class="cta-wrap_tarjeta-rest">
+                        <div class="precio_tarjeta-rest">
+                            <span>15Bs</span>
+                        </div>
+                        <div class="cta_tarjeta-rest">
+                            <a href="">Añadir al carrito </a>
+
+                            <a href="">Mas Informacion </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="" alt="" class="imagen__platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Nombre producto</h4>
+                        <p>tipo producto</p>
+                        <p class="precio">30Bs<span class="u-pull-right">15Bs</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar__carrito"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="" alt="" class="imagen__platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Nombre producto</h4>
+                        <p>tipo producto</p>
+                        <p class="precio">30Bs<span class="u-pull-right">15Bs</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar__carrito"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="four columns">
+                <div class="card">
+                    <img src="" alt="" class="imagen__platillo u-full-width">
+                    <div class="info-card">
+                        <h4>Nombre producto</h4>
+                        <p>tipo producto</p>
+                        <p class="precio">30Bs<span class="u-pull-right">15Bs</span></p>
+                        <a href="#" class="u-full-width button-primary button input agregar__carrito"
+                            data-id="1">Agregar al carrito</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
