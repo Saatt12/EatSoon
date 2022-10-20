@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.hero {
+    background: url(img/WallpaperDog-10957631.png) center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.wrap-contenido__hero {
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    width: 40vw;
+    margin-top: 1rem;
+}
+
+.text-logo-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 7px;
+}
+
+.text-logo-header:hover {
+    color: goldenrod;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+li.menu-item {
+    display: flex;
+    margin: .75rem;
+}
+
+li.menu-item a {
+    padding-top: .5rem;
+    padding-left: .5rem;
+    color: white;
+}
+
+li.menu-item a:hover {
+    color: goldenrod;
+}
+
+.nav__label,
+.nav__input,
+.nav__img {
+    display: none;
+}
+
+/* .button {
+    background-color: #fbaf32;
+    color: white;
+} */
+
+.contenido__hero {
+    margin-top: 40px;
+    color: white;
+}
+
+.contenido__hero form {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.contenido__hero form .submit__buscador {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    padding: 0;
+    display: block;
+    text-indent: -9999px;
+    width: 50px;
+    background-image: url(img/lupa.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.container__platillos {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.barra__container {
+    background-image: radial-gradient(circle, #b95a00, #b65900, #b35700, #b05600, #ad5400);
+    margin-bottom: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.columna__barra {
+    display: flex;
+}
+
+.barra__container p {
+    color: white;
+}
+
+.titulo__platillos {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.encabezado {
+    color: white;
+}
+
+.wrap {
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.column-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.tarjeta-rest {
+    
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    align-items: end;
+}
+
+.wrap-text_tarjeta-rest {
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    width: 100%;
+}
+
+.wrap-text_tarjeta-rest h {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta_tarjeta-rest {
+    display: grid;
+    row-gap: 5px;
+    justify-content: center;
+    grid-template-columns: 100%;
+}
+
+.cta_tarjeta-rest a {
+    padding: .25rem 1rem;
+    border-radius: 4px;
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.precio_tarjeta-rest span {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.filtro{
+    display: none;
+}
+/* @media (max-width:768px) {
+
+    ul.main-menu,
+    #nav-crear,
+    #nav-iniciar {
+        display: none;
+        left: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav__label {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .main-menu {
+        position: fixed;
+        display: flex;
+    }
+} */
+
+.contenedor{
+    display: inline-block;
+}
