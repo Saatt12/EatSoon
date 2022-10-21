@@ -70,8 +70,8 @@
                     
                     <div class="mb-4">
                         <label for="imagen"><i class="bi bi-image-fill"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="imagen"  required>
-                        <div class="image-danger"></div>  
+                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required></input>
+                        <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
                     <div class="mb-4">
                         <label for="desc_producto"> <i class="bi bi-question-square-fill" required></i> INFORMACIÓN ADICIONAL</label>
@@ -97,3 +97,27 @@
 <script src="js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
 </html>
+
+<script type="text/javascript">
+
+function validarExt()
+{
+    var archivoInput = document.getElementById('archivoInput');
+    var archivoRuta = archivoInput.value;
+    var extPermitidas = /(.png|.jpg|.jpeg|.svg)$/i;
+    if(!extPermitidas.exec(archivoRuta)){
+        alert('Por favor, seleccione una imagen');
+        archivoInput.value = '';
+        return false;
+    }
+
+    else
+    {
+        //PRevio de las extenciones
+        if (archivoInput.files && archivoInput.files[0]) 
+        {
+            var visor = new FileReader();
+        }
+    }
+}
+</script>
