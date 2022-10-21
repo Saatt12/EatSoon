@@ -43,13 +43,13 @@
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-file-earmark-binary-fill"></i>CANTIDAD</label>
                         <input type="number" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades" required min="1" max="9999" pattern="^[0-9]+">
+                        placeholder= "Unidades" required min="1" max="99" pattern="^[0-9]+">
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-credit-card-fill"></i>PRECIO</label>
                         <input type="number"  step="0.01" name="precio_producto" class="form-control" id="precio_producto" 
-                        placeholder= ".Bs"required min="1" max="9999" pattern="^[0-9]+">
+                        placeholder= ".Bs"required min="1" max="999" pattern="^[0-9]+">
                         <div class="number-danger; "></div> 
                         
                     </div>
@@ -93,5 +93,7 @@
         </div>
     </section>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
 </html>

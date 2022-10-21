@@ -73,7 +73,7 @@
                             <p>Búscalo aquí</p>
                         </div>
                         <form class="d-flex">
-                            <input type="text" class="form-control" placeholder="¿Que te gustaria probar?"
+                            <input type="text" class="form-control" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
                                 id="buscador">
                             <button type="submit" class="submit__buscador"><i class="fa fa-search"></i></button>
                         </form>
