@@ -118,6 +118,6 @@ function validarExt()
         {
             var visor = new FileReader();
         }
-    }
+    } 
 }
 </script>
