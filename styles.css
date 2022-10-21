@@ -99,26 +99,6 @@
      margin-bottom: 0;
  }
 
- .submit__buscador {
-     /*boton del buscador */
-     width: 20%;
-     padding: 10px;
-     background: rgb(218 165 32 /.5);
-     /*rgb es una composicion de colores: red, green, blue y la barra de division significa que le voy a dar cierta tonalidad al color */
-     color: white;
-     font-size: 17px;
-     border: 1px solid rgb(218 165 32 /.5);
-     border-left: none;
-     border-radius: 6px;
-     cursor: pointer;
-     /*esto es para cambiar el icono del cursor cuando esté situado en el boton */
- }
-
- .submit__buscador:hover {
-     /*coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa */
-     background: goldenrod;
- }
-
 
  /*barra naranja oscuro que está despues  del buscador */
 
@@ -141,6 +121,7 @@
  .barra__container p {
      /*parrafos que estan dentro de columna__barra  */
      color: white;
+     font-size: 1rem;
  }
 
  /*titulo de la lista */
