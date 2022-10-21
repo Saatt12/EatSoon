@@ -12,7 +12,7 @@
     <title>Eat Soon</title>
     <link rel="stylesheet" href="styles.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
-    //funcion con jquery para el filtro de busqueda, historia H11
+
     <script type="text/javascript">  
         $(document).ready(function () {
         (function($) {
