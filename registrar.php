@@ -65,7 +65,7 @@
                 
                         ?>
 
-                        <label for="fecha_caducidad"><i class="bi bi-calendar2-date-fill"></i>FECHA DE VENCIMIENTO</label>
+                        <label for="fecha_caducidad"><i class="bi bi-calendar2-date-fill"></i> FECHA DE VENCIMIENTO</label>
                         <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" class="form-control" id="fecha_caducidad" required >
                         <div class="date-danger"></div> 
                     </div>

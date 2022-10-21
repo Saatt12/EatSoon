@@ -134,7 +134,7 @@
                                 
                             </div>
                             <div class="precio_tarjeta-rest">
-                                <span><?php  echo $resultado['precio_producto'];?>.bs</span>
+                                <span><?php  echo $resultado['precio_producto'];?>.Bs</span>
                             </div>
                             <div class="cta_tarjeta-rest">
                                 <a href="">Añadir al carrito </a>
