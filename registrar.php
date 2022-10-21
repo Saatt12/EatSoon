@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">  
+<html lang="es">
     
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
             </div> 
         </div>
     </div>
-     
+    
 <body>
     <section class=" d-flex justify-content-center align-items-center bg-dark">
 
@@ -41,30 +41,40 @@
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
-                        <label for="cantidad"><i class="bi bi-file-earmark-binary-fill"></i>CANTIDAD</label>
+                        <label for="cantidad"><i class="bi bi-file-earmark-binary-fill"></i> CANTIDAD</label>
                         <input type="number" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades" required min="1" pattern="^[0-9]+">
+                        placeholder= "Unidades" required min="1" max="99" pattern="^[0-9]+"   oninput="this.value = this.value.replace(/[^a-z A-Z]/,'-')>
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
-                        <label for="precio_producto"><i class="bi bi-credit-card-fill"></i>PRECIO</label>
-                        <input type="number" name="precio_producto" class="form-control" id="precio_producto" 
-                        placeholder= ".Bs"required min="1" pattern="^[0-9]+">
+                        <label for="precio_producto"><i class="bi bi-credit-card-fill"></i> PRECIO</label>
+                        <input type="number"  step="0.01" name="precio_producto" class="form-control" id="precio_producto" 
+                        placeholder= ".Bs"required min="1" max="999" pattern="^[0-9]+"  oninput="this.value = this.value.replace(/[^a-z A-Z]/,'-')">
                         <div class="number-danger; "></div> 
-                    </div> 
-                    <div class="mb-4">
-                        <label for="fecha_caducidad"><i class="bi bi-calendar2-date-fill"></i>FECHA DE VENCIMIENTO</label>
-                        <input type="date" name="fecha_caducidad" class="form-control" id="fecha_caducidad" required >
-                        <div class="date-danger"></div>   
+                        
                     </div>
-                     
+
+                    <div class="mb-4">
+                        <?php
+                         date_default_timezone_set("America/Asuncion");
+                             $fechamin = date("Y-m-d");
+                            
+                             $fechamax = date("Y-m-d",strtotime($fechamin."+ 30 day")); 
+                
+                        ?>
+
+                        <label for="fecha_caducidad"><i class="bi bi-calendar2-date-fill"></i> FECHA DE VENCIMIENTO</label>
+                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" class="form-control" id="fecha_caducidad" required >
+                        <div class="date-danger"></div> 
+                    </div>
+                    
                     <div class="mb-4">
                         <label for="imagen"><i class="bi bi-camera-fill"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="imagen" required>
+                        <input type="file" class="form-control" name="imagen" id="imagen"  required>
                         <div class="image-danger"></div>  
                     </div> 
                     <div class="mb-4">
-                        <label for="desc_producto"> <i class="bi bi-chat-right-dots-fill"  required></i> INFORMACION ADICIONAL</label>
+                        <label for="desc_producto"> <i class="bi bi-chat-right-dots-fill" required></i> INFORMACIÓN ADICIONAL</label>
                         <textarea name="desc_producto" id="desc_producto" class="form-control" placeholder="inf.." maxlength="100"></textarea>
                         <div class="mensaje text-danger"></div>
                     </div>                                 
@@ -74,7 +84,7 @@
                         </button>
                     </div>
                     <div class="mb-2">
-                        <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" >
+                    <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
                     </div>      
@@ -83,5 +93,7 @@
         </div>
     </section>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
 </html>
