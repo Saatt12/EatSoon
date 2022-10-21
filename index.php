@@ -138,7 +138,7 @@
                             </div>
                             <div class="cta_tarjeta-rest">
                                 <a href="">Añadir al carrito </a>
-                                <a href="">Mas Informacion </a>
+                                <a href="">Más Información </a>
                             </div>
                         </div>
                     </div>
