@@ -17,8 +17,30 @@
     if(!$enlace){
         die("no se puede".mysqli_error());
     }    
+    //probando------------------------------
+    if(buscarRepetido($nombre_producto,$precio_producto,$enlace)==1){
+        echo "El producto ingresado ya existe";
+    }else{
+        $accion_nm = "INSERT INTO producto(nombre_producto,precio_producto,fecha_caducidad,desc_producto,cantidad,imagen) VALUES ('$nombre_producto','$precio_producto','$fecha_caducidad','$desc_producto','$cantidad','$img')";
+        echo $consulta_nm = mysqli_query($enlace,$accion_nm) or die(mysqli_error());
+    }
+    //-------------------------------------------------------------------------------
+    function buscarRepetido($nombre,$cant,$conexion){
+        $sql = "SELECT * FROM producto 
+        WHERE nombre_producto='$nombre' AND precio_producto='$cant'";
+                $res=mysqli_query($conexion,$sql);
+                if(mysqli_num_rows($res) > 0){
+                    return 1;
+                }else{
+                    return 0;
+                }
+    }
+    //--------------------------------------
+
+
+    /* lo que da
     //Insertamos las variable en la BD
     $accion_nm = "INSERT INTO producto(nombre_producto,precio_producto,fecha_caducidad,desc_producto,cantidad,imagen) VALUES ('$nombre_producto','$precio_producto','$fecha_caducidad','$desc_producto','$cantidad','$img')";
     $consulta_nm = mysqli_query($enlace,$accion_nm) or die(mysqli_error());    
-    mysqli_close($enlace);  
+    mysqli_close($enlace);  */
 ?>
