@@ -102,7 +102,7 @@
 
         <div class="container__platillos bg-dark">
             <div class="titulo__platillos">
-                <h1 class="encabezado">Ofertas del dia</h1>
+                <h1 class="encabezado"></h1>
             </div>
 
             <div class="wrap column-4 columns">
@@ -125,25 +125,29 @@
                         <h3><?php  echo $resultado['nombre_producto'];?></h3>
                         <div class="cta-wrap_tarjeta-rest">
                             <div class="container__fechas">
-                                <span><?php  echo $resultado['fecha_publicacion'];?></span>
+                                <span><?php echo $resultado['fecha_publicacion'];?></span>
                                 
                             </div>
 
                             <div class="container__fechas">
-                                <span><?php  echo $resultado['fecha_caducidad'];?></span>
+                                <span><?php echo $resultado['fecha_caducidad'];?> </span>
                                 
                             </div>
                             <div class="precio_tarjeta-rest">
-                                <span><?php  echo $resultado['precio_producto'];?>.Bs</span>
+                                <span><?php echo $resultado['precio_producto'];?>.Bs</span>
                             </div>
                             <div class="cta_tarjeta-rest">
                                 <a href="">Añadir al carrito </a>
-                                <a href="">Mas Informacion </a>
+                                <a href="">Más Información </a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <?php }?>
+            </div>
+            <div class="container__platillos bg-dark">
+            <div class="titulo__platillos">
+                <h1 class="encabezado"></h1>
             </div>
         </div>
 
