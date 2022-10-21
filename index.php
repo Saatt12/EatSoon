@@ -153,6 +153,8 @@
 
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/Alerts.js"></script>  <!--Conecta el js-->
 </body>
 
 </html>

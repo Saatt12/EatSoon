@@ -43,18 +43,28 @@
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-file-earmark-binary-fill"></i>CANTIDAD</label>
                         <input type="number" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades" required min="1" pattern="^[0-9]+">
+                        placeholder= "Unidades" required min="1" max="9999" pattern="^[0-9]+">
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-credit-card-fill"></i>PRECIO</label>
-                        <input type="number" name="precio_producto" class="form-control" id="precio_producto" 
-                        placeholder= ".Bs"required min="1" pattern="^[0-9]+">
+                        <input type="number"  step="0.01" name="precio_producto" class="form-control" id="precio_producto" 
+                        placeholder= ".Bs"required min="1" max="9999" pattern="^[0-9]+">
                         <div class="number-danger; "></div> 
+                        
                     </div>
+
                     <div class="mb-4">
+                        <?php
+                         date_default_timezone_set("America/Asuncion");
+                             $fechamin = date("Y-m-d");
+                            
+                             $fechamax = date("Y-m-d",strtotime($fechamin."+ 30 day")); 
+                
+                        ?>
+
                         <label for="fecha_caducidad"><i class="bi bi-calendar2-date-fill"></i>FECHA DE VENCIMIENTO</label>
-                        <input type="date" name="fecha_caducidad" class="form-control" id="fecha_caducidad" required >
+                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" class="form-control" id="fecha_caducidad" required >
                         <div class="date-danger"></div> 
                     </div>
                     
@@ -74,7 +84,7 @@
                         </button>
                     </div>
                     <div class="mb-2">
-                        <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" >
+                    <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
                     </div>      
