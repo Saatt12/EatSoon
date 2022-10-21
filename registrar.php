@@ -36,20 +36,22 @@
                 <form id = "registroProducto" action="conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-egg-fill"></i> NOMBRE DEL PRODUCTO</label>
-                        <input type="text" class="form-control" name="nombre_producto" id="nombre_producto" placeholder= "Ingrese nombre del producto"  
+                        <input type="text" class="form-control" name="nombre_producto" id="nombre_producto" maxlength="40" placeholder= "Ingrese nombre del producto"  
                         oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required>
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-file-earmark-binary-fill"></i>CANTIDAD</label>
-                        <input type="number" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades" required min="1" max="99" pattern="^[0-9]+">
+                        <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength = "3" name="cantidad" class="form-control" id="cantidad" 
+                        placeholder= "Unidades" required min="1" max="999" pattern="^[0-9]+">
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-credit-card-fill"></i>PRECIO</label>
-                        <input type="number"  step="0.01" name="precio_producto" class="form-control" id="precio_producto" 
-                        placeholder= ".Bs"required min="1" max="999" pattern="^[0-9]+">
+                        <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                            maxlength = "3" step="0.5" name="precio_producto" class="form-control" id="precio_producto" maxlength="3"
+                        placeholder= ".Bs"required min="1" max="500" pattern="^[0-9]+">
                         <div class="number-danger; "></div> 
                         
                     </div>
@@ -75,7 +77,7 @@
                     </div> 
                     <div class="mb-4">
                         <label for="desc_producto"> <i class="bi bi-chat-right-dots-fill" required></i> INFORMACION ADICIONAL</label>
-                        <textarea name="desc_producto" id="desc_producto" class="form-control" placeholder="inf.."></textarea>
+                        <textarea name="desc_producto" id="desc_producto" maxlength="155" class="form-control" placeholder="inf.."></textarea>
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
