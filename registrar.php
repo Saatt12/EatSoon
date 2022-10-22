@@ -15,7 +15,7 @@
 
     <script src="js/main.js"></script>
     <script>
-        function toggleButton()
+        function toggleButton() 
         {
             var nom = $('#nombre_producto').val();
             var can = $('#cantidad').val();
