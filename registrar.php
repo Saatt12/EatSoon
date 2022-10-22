@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     
-    <a href="PageIni.php" class="col-12 btn btn-warning d-flex  ; bi bi-arrow-left-circle-fill " > Inicio Vendedor</a>
-     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <a href="index.php" class="col-12 btn btn-warning d-flex  ; bi bi-arrow-left-circle-fill " > __Inicio Vendedor</a>
+    
 
     <script src="js/main.js"></script>
     <script>
@@ -35,7 +35,7 @@
     </script>
 </head>
     <div class=" bg-dark ">
-        <h2 style="text-align:center; color: rgb(255, 255, 255);" >  Registra tu Producto</h2>
+        <h2 style="text-align:center; color: rgb(218, 165, 32);" >  Registra tu Producto</h2>
         <div class="row">
         </div>
             <div style="text-align:center" class="col-lg-12 ">
