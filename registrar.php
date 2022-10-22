@@ -22,7 +22,7 @@
         </div>
             <div style="text-align:center" class="col-lg-12 ">
                 
-                <img class="mt-2; img-fluid; bi bi-clipboard" style="color: white ;" src="imagenes/clipboard2.svg" width="10%" /> 
+                <img class="mt-2; img-fluid; bi bi-clipboard" style="color: white ;" src="img/fotoRegistrar.svg" width="10%" /> 
             </div> 
         </div>
     </div>
@@ -36,7 +36,7 @@
                 <form id = "registroProducto" action="conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
-                        <input type="text" maxlength ="25" class="form-control" name="nombre_producto" id="nombre_producto" placeholder= "Ingrese nombre del producto"  
+                        <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" placeholder= "Ingrese nombre del producto"  
                         oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required>
                         <div class="text-danger"></div>  
                     </div>
@@ -70,9 +70,10 @@
                     
                     <div class="mb-4">
                         <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required>dddddd</input>
+                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required></input>
                         <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
+
                     <div class="mb-4">
                         <label for="desc_producto"> <i class="bi bi-question-square-fill" required></i> INFORMACIÓN ADICIONAL</label>
                         <textarea name="desc_producto" id="desc_producto" class="form-control" placeholder="inf.." maxlength="100"></textarea>
@@ -83,12 +84,15 @@
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
                         </button>
                     </div>
-                    <div class="mb-2">
-                    <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
+
+                       
+
+                </form>
+                <div class="mb-2">
+                    <button type= "reset" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
-                    </div>      
-                </form>
+                </div>  
             </div>
         </div>
     </section>

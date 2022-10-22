@@ -234,8 +234,9 @@
      /*agarra a las etiquetas <span> dentro de container__fechas*/
      font-size: 1rem;
      font-weight: normal;
-     text-decoration: underline;
-     /*fechas subrayadas */
+     text-decoration: none;
+     font-size: 1.2rem;
+    /*fechas subrayadas */
      text-transform: uppercase;
      /*texto fechas en mayusculas */
  }

@@ -126,12 +126,12 @@
                         <h1><?php echo $resultado['nombre_producto'];?></h1>
                         <div class="cta-wrap_tarjeta-rest">
                             <div class="container__fechas">
-                                <span>pub:<?php echo $resultado['fecha_publicacion'];?></span>
+                                <span><span style="font-weight:bold;">pub:</span><?php echo $resultado['fecha_publicacion'];?></span>
                                 
                             </div>
 
                             <div class="container__fechas">
-                                <span>venc:<?php echo $resultado['fecha_caducidad'];?> </span>
+                                <span><span style="font-weight:bold;">Ven:</span><?php echo $resultado['fecha_caducidad'];?> </span>
                                 
                             </div>
                             <div class="precio_tarjeta-rest">
