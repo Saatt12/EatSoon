@@ -55,7 +55,7 @@
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
                         <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
-                        oninput="this.value = this.value.replace(/[^a-z A-Z 1-9]/,'')" >
+                        oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" >
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
@@ -98,7 +98,7 @@
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
-                        <button id ="botton" disabled class="col-12 btn btn-warning d-flex justify-content-between ">
+                        <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
                         </button>
                     </div>
