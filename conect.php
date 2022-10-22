@@ -1,5 +1,5 @@
 <?php 
-    //Edgar Fausto Copa Lopez
+
     //esta funcion inserta datos del formulario registar de la H3 en la BD 
 
     //recupera las variables de registreo mediante metodo POST 
@@ -30,10 +30,12 @@
         WHERE nombre_producto='$nombre' AND precio_producto='$cant'";
                 $res=mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($res) > 0){
-                    return 1;
+                    
+                    return header('Location: registrar.php');;
                 }else{
                     return 0;
                 }
+                
     }
     //--------------------------------------
 
@@ -43,4 +45,5 @@
     $accion_nm = "INSERT INTO producto(nombre_producto,precio_producto,fecha_caducidad,desc_producto,cantidad,imagen) VALUES ('$nombre_producto','$precio_producto','$fecha_caducidad','$desc_producto','$cantidad','$img')";
     $consulta_nm = mysqli_query($enlace,$accion_nm) or die(mysqli_error());    
     mysqli_close($enlace);  */
+    
 ?>

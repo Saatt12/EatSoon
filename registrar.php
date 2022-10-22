@@ -39,7 +39,7 @@
         <div class="row">
         </div>
             <div style="text-align:center" class="col-lg-12 ">
-                <img class="mt-2; img-fluid; " style="color: white ;" src="img/imagenReg.png" width="15%" /> 
+                <img src="img/pngwing.com.png" class="mt-2; img-fluid; " style="color: white ;"  width="15%" /> 
             </div> 
         </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="mt-3 card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">     
             <div class="mb-1">
                 <?php //Este es el formulario donde se captura los datos que el usuario introduce de la H3?>
-                <form id = "registroProducto" action="conect.php" method="POST" enctype="multipart/form-data">
+                <form id = "registroProducto" action= "conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
                         <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
@@ -98,8 +98,9 @@
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
-                        <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
+                        <button id ="botton" href="registrar.php"class="col-12 btn btn-warning d-flex justify-content-between ">
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
+                            
                         </button>
                     </div>
                     <div class="mb-2" >
