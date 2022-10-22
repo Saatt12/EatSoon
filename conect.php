@@ -1,5 +1,5 @@
 <?php 
-    //Edgar Fausto Copa Lopez
+
     //esta funcion inserta datos del formulario registar de la H3 en la BD 
 
     //recupera las variables de registreo mediante metodo POST 
@@ -31,7 +31,7 @@
                 $res=mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($res) > 0){
                     
-                    return 1;
+                    return header('Location: registrar.php');;
                 }else{
                     return 0;
                 }

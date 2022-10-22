@@ -50,7 +50,7 @@
         <div class="mt-3 card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">     
             <div class="mb-1">
                 <?php //Este es el formulario donde se captura los datos que el usuario introduce de la H3?>
-                <form id = "registroProducto" action="registrar.php" action= "conect.php" method="POST" enctype="multipart/form-data">
+                <form id = "registroProducto" action= "conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
                         <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
