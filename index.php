@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Eat Soon</title>
     <link rel="stylesheet" href="styles.css">
     <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+
+    <title>Eat Soon</title>
+    
 
     <script type="text/javascript">  
         $(document).ready(function () {
@@ -125,12 +126,12 @@
                         <h1><?php echo $resultado['nombre_producto'];?></h1>
                         <div class="cta-wrap_tarjeta-rest">
                             <div class="container__fechas">
-                                <span><?php echo $resultado['fecha_publicacion'];?></span>
+                                <span>pub:<?php echo $resultado['fecha_publicacion'];?></span>
                                 
                             </div>
 
                             <div class="container__fechas">
-                                <span><?php echo $resultado['fecha_caducidad'];?> </span>
+                                <span>venc:<?php echo $resultado['fecha_caducidad'];?> </span>
                                 
                             </div>
                             <div class="precio_tarjeta-rest">
