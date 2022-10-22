@@ -30,7 +30,7 @@
         WHERE nombre_producto='$nombre' AND precio_producto='$cant'";
                 $res=mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($res) > 0){
-                    header('location:registrar.php');
+                    
                     return 1;
                 }else{
                     return 0;
