@@ -69,8 +69,8 @@
                     </div>
                     
                     <div class="mb-4">
-                        <label for="imagen"><i class="bi bi-image-fill"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required></input>
+                        <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
+                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required>dddddd</input>
                         <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
                     <div class="mb-4">
