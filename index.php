@@ -49,6 +49,12 @@
 
                         <ul class="main-menu">
 
+                        <li class="menu-item">
+                                <i class="bi bi-clipboard-plus-fill" style="font-size: 1.5rem; color: white;"></i>
+                                <a href="registrar.php" id="nav-iniciar">Registrar Producto</a>
+                                
+                            </li>
+
                             <li class="menu-item">
                                 <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
                                 <a href="/" id="nav-iniciar">Inicia Sesion</a>
