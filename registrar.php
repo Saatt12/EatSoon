@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+     
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +14,25 @@
     
 
     <script src="js/main.js"></script>
-    
+    <script>
+        function toggleButton()  
+        {
+            var nom = $('#nombre_producto').val();
+            var can = $('#cantidad').val();
+            var pre = $('#precio').val();
+            var fec = $('#fecha_caducidad').val();
+            var arc = $('#archivoInput').val();
+            var des = $('#desc_producto').val();
+
+            if (nom && can && pre && fec && arc && des) {
+                $('#botton').attr('disabled', false);
+            } else {
+                $('#botton').attr('disabled', true);
+            }
+        }
+          
+
+    </script>
 </head>
     <div class=" bg-dark ">
         <h2 style="text-align:center; color: rgb(218, 165, 32);" >  Registra tu Producto</h2>
@@ -36,20 +54,20 @@
                 <form id = "registroProducto" action="conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
-                        <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" placeholder= "Ingrese nombre del producto"  
-                        oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required>
+                        <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
+                        oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" >
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> CANTIDAD</label>
                         <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades" required min="1" max="99" pattern="^[0-9]+"   oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-')>
+                        placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"  onchange="toggleButton()" oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-')>
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-cash-coin"></i> PRECIO</label>
-                        <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "3" step="0.01" name="precio_producto" class="form-control" id="precio_producto" 
-                        placeholder= ".Bs" required min="1" max="500"  pattern="^[0-9]+">
+                        <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "3" step="0.01" name="precio_producto" class="form-control" id="precio" onchange="toggleButton()" 
+                        placeholder= ".Bs"  min="1" max="500"  pattern="^[0-9]+">
                         <div class="number-danger; "></div> 
                         
                     </div>
@@ -64,32 +82,28 @@
                         ?>
 
                         <label for="fecha_caducidad"><i class="bi bi-calendar2-day-fill"></i> FECHA DE VENCIMIENTO</label>
-                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" class="form-control" id="fecha_caducidad" required >
+                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" onchange="toggleButton()" class="form-control" id="fecha_caducidad">
                         <div class="date-danger"></div> 
                     </div>
                     
                     <div class="mb-4">
                         <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="return validarExt()" required></input>
+                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="toggleButton()" onchange="return validarExt()" ></input>
                         <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
 
                     <div class="mb-4">
-                        <label for="desc_producto"> <i class="bi bi-question-square-fill" required></i> INFORMACIÓN ADICIONAL</label>
-                        <textarea name="desc_producto" id="desc_producto" class="form-control" placeholder="inf.." maxlength="100"></textarea>
+                        <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> INFORMACIÓN ADICIONAL</label>
+                        <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="200"></textarea>
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
-                        <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
+                        <button id ="botton" disabled class="col-12 btn btn-warning d-flex justify-content-between ">
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
                         </button>
                     </div>
-
-                       
-
-                </form>
-                <div class="mb-2">
-                    <button type= "reset" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
+                    <div class="mb-2" >
+                    <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
                 </div>  
@@ -101,6 +115,7 @@
 <script src="js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
 </html>
+
 
 <script type="text/javascript">
 
