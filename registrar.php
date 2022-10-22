@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     
-    <a href="PageIni.php" class="col-12 btn btn-warning d-flex  ; bi bi-arrow-left-circle-fill " > Inicio Vendedor</a>
+    <a href="index.php" class="col-12 btn btn-warning d-flex  ; bi bi-arrow-left-circle-fill " > Inicio Vendedor</a>
     
 
     <script src="js/main.js"></script>
