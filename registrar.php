@@ -98,8 +98,9 @@
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
-                        <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
+                        <button id ="botton" href="registrar.php" class="col-12 btn btn-warning d-flex justify-content-between ">
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
+                            
                         </button>
                     </div>
                     <div class="mb-2" >
