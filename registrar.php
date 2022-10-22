@@ -34,7 +34,7 @@
 
     </script>
 </head>
-    <div class=" bg-dark ">
+<div class= " pt-4 bg-dark ">
         <h2 style="text-align:center; color: rgb(218, 165, 32);" >  Registra tu Producto</h2>
         <div class="row">
         </div>
@@ -104,7 +104,7 @@
                         </button>
                     </div>
                     <div class="mb-2" >
-                    <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
+                    <button type="button" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
                 </div>  
