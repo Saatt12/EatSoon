@@ -72,8 +72,8 @@
 
     <main>
         <div class="hero">
-            <div class="container">
-                <div class="row">
+            <div class="container ">
+                <div class="row ">
                     <div class="wrap-contenido__hero">
                         <div class="contenido__hero">
                             <h2>¿Que te apetece?</h2>

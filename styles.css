@@ -121,7 +121,7 @@
  .barra__container p {
      /*parrafos que estan dentro de columna__barra  */
      color: white;
-     font-size: 1rem;
+     font-size: 15px;
  }
 
  /*titulo de la lista */
@@ -236,7 +236,7 @@
      font-weight: normal;
      text-decoration: none;
      font-size: 1.2rem;
-    /*fechas subrayadas */
+     /*fechas subrayadas */
      text-transform: uppercase;
      /*texto fechas en mayusculas */
  }
@@ -254,6 +254,10 @@
      .wrap {
          grid-template-columns: repeat(3, 1fr);
      }
+
+     .barra__container p {
+         font-size: 15px;
+     }
  }
 
  @media (max-width: 768px) {
@@ -262,6 +266,10 @@
      .wrap {
          grid-template-columns: repeat(2, 1fr);
      }
+
+     .barra__container p {
+         font-size: 10px;
+     }
  }
 
  @media (max-width: 480px) {
@@ -269,5 +277,9 @@
      /*cuando la pantalla tenga un ancho maximo de 480px */
      .wrap {
          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .barra__container p {
+         font-size: 5px;
      }
  }
