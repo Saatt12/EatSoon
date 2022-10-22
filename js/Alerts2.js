@@ -1,5 +1,5 @@
 swal({
-  title: "Registra tu pruducto!",
+  title: "Registra tu producto!",
   text: "No te olvides llenar todos lo campos!!!",
   icon: "info",
   button: "Aceptar!",
