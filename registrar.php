@@ -39,7 +39,7 @@
         <div class="row">
         </div>
             <div style="text-align:center" class="col-lg-12 ">
-                <img class="mt-2; img-fluid; " style="color: white ;" src="img/imagenReg.png" width="15%" /> 
+                <img src="img/pngwing.com.png" class="mt-2; img-fluid; " style="color: white ;"  width="15%" /> 
             </div> 
         </div>
     </div>
@@ -98,7 +98,7 @@
                         <div class="mensaje text-danger"></div>
                     </div>                                 
                     <div class="mb-2">
-                        <button id ="botton" href="registrar.php" class="col-12 btn btn-warning d-flex justify-content-between ">
+                        <button id ="botton" href="registrar.php"class="col-12 btn btn-warning d-flex justify-content-between ">
                             <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
                             
                         </button>

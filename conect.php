@@ -30,10 +30,12 @@
         WHERE nombre_producto='$nombre' AND precio_producto='$cant'";
                 $res=mysqli_query($conexion,$sql);
                 if(mysqli_num_rows($res) > 0){
+                    header('location:registrar.php');
                     return 1;
                 }else{
                     return 0;
                 }
+                
     }
     //--------------------------------------
 
@@ -43,4 +45,5 @@
     $accion_nm = "INSERT INTO producto(nombre_producto,precio_producto,fecha_caducidad,desc_producto,cantidad,imagen) VALUES ('$nombre_producto','$precio_producto','$fecha_caducidad','$desc_producto','$cantidad','$img')";
     $consulta_nm = mysqli_query($enlace,$accion_nm) or die(mysqli_error());    
     mysqli_close($enlace);  */
+    
 ?>
