@@ -58,6 +58,7 @@
                         oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required>
                         <div class="text-danger"></div>  
                     </div>
+                    <div class=" bg-dark mt-3"></div>
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> CANTIDAD</label>
                         <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
@@ -108,11 +109,20 @@
                         </button>
                 </div>  
             </div>
+            
         </div>
+        
     </section>
+
+        </div>
+            <div style=" ; text-align:center" class="bg-dark col-lg-12 ">
+                <img class="  img-fluid; bi bi-clipboard" style="color: white ;"  width="10%" /> 
+            </div> 
+        </div>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="js/Alerts2.js"></script>  <!--Conecta el js-->
+    <script src="js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
 </html>
 
