@@ -55,19 +55,19 @@
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
                         <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
-                        oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" >
+                        oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required>
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> CANTIDAD</label>
                         <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
-                        placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"  onchange="toggleButton()" oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-')>
+                        placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"  onchange="toggleButton()" oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-') required>
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-cash-coin"></i> PRECIO</label>
                         <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "3" step="0.01" name="precio_producto" class="form-control" id="precio" onchange="toggleButton()" 
-                        placeholder= ".Bs"  min="1" max="500"  pattern="^[0-9]+">
+                        placeholder= ".Bs"  min="1" max="500"  pattern="^[0-9]+" required>
                         <div class="number-danger; "></div> 
                         
                     </div>
@@ -82,13 +82,13 @@
                         ?>
 
                         <label for="fecha_caducidad"><i class="bi bi-calendar2-day-fill"></i> FECHA DE VENCIMIENTO</label>
-                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" onchange="toggleButton()" class="form-control" id="fecha_caducidad">
+                        <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>" onchange="toggleButton()" class="form-control" id="fecha_caducidad" required>
                         <div class="date-danger"></div> 
                     </div>
                     
                     <div class="mb-4">
                         <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
-                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="toggleButton()" onchange="return validarExt()" ></input>
+                        <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="toggleButton()" onchange="return validarExt()" required></input>
                         <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
 
