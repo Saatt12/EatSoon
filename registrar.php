@@ -40,7 +40,7 @@
         </div>
             <div style="text-align:center" class="col-lg-12 ">
                 
-                <img class="mt-2; img-fluid; bi bi-clipboard" style="color: white ;" src="img/fotoRegistrar.svg" width="10%" /> 
+                <img class="mt-2; img-fluid; " style="color: white ;" src="img/imagenReg.png" width="15%" /> 
             </div> 
         </div>
     </div>
