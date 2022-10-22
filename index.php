@@ -122,7 +122,7 @@
                 ?>
                 <div class="tarjeta-rest" style="background: url(storge/<?php echo $resultado['imagen']?>) center; background-size: cover;">
                     <div class="wrap-text_tarjeta-rest">
-                        <h3><?php  echo $resultado['nombre_producto'];?></h3>
+                        <h1><?php echo $resultado['nombre_producto'];?></h1>
                         <div class="cta-wrap_tarjeta-rest">
                             <div class="container__fechas">
                                 <span><?php echo $resultado['fecha_publicacion'];?></span>
