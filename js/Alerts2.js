@@ -6,17 +6,3 @@ swal({
 
 });
 
-function validar() {
-
-  //Almacenamos los valores
-  nombre = $('#cantidad').val();
-
-  //Comprobamos la longitud de caracteres
-  if (nombre.length < 2) {
-    return true;
-  }
-  else {
-    alert('Maximo 2 caracteres');
-    return false;
-  }
-}

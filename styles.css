@@ -104,7 +104,7 @@
 
 
  .barra__container {
-     background-image: radial-gradient(circle, #b95a00, #b65900, #b35700, #b05600, #ad5400);
+     background: goldenrod;
      /*difuminando colores*/
      margin-bottom: 0;
      padding: 20px 0;
