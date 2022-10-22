@@ -40,7 +40,7 @@
         </div>
             <div style="text-align:center" class="col-lg-12 ">
                 
-                <img class="mt-2; img-fluid; bi bi-clipboard" style="color: white ;" src="imagenes/clipboard2.svg" width="10%" /> 
+                <img class="mt-2; img-fluid; bi bi-clipboard" style="color: white ;" src="img/fotoRegistrar.svg" width="10%" /> 
             </div> 
         </div>
     </div>
@@ -54,20 +54,20 @@
                 <form id = "registroProducto" action="conect.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-4">
                         <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
-                        <input type="text" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
+                        <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto" onchange="toggleButton()" placeholder= "Ingrese nombre del producto"  
                         oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" >
                         <div class="text-danger"></div>  
                     </div>
                     <div class="mb-4">
                         <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> CANTIDAD</label>
-                        <input type="number" name="cantidad" class="form-control" id="cantidad" 
+                        <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
                         placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"  onchange="toggleButton()" oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-')>
                         <div class="number-danger"></div> 
                     </div>
                     <div class="mb-4">
                         <label for="precio_producto"><i class="bi bi-cash-coin"></i> PRECIO</label>
-                        <input type="number"  step="0.01" name="precio_producto" class="form-control" id="precio" onchange="toggleButton()" 
-                        placeholder= ".Bs"  min="1" max="999" min="1" pattern="^[0-9]+">
+                        <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "3" step="0.01" name="precio_producto" class="form-control" id="precio" onchange="toggleButton()" 
+                        placeholder= ".Bs"  min="1" max="500"  pattern="^[0-9]+">
                         <div class="number-danger; "></div> 
                         
                     </div>
@@ -87,10 +87,11 @@
                     </div>
                     
                     <div class="mb-4">
-                        <label for="imagen"><i class="bi bi-image-fill"></i> IMAGEN DEL PRODUCTO</label>
+                        <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
                         <input type="file" class="form-control" name="imagen" id="archivoInput" onchange="toggleButton()" onchange="return validarExt()" ></input>
                         <div id ="visorArchivo" class="image-danger"></div>  
                     </div> 
+
                     <div class="mb-4">
                         <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> INFORMACIÓN ADICIONAL</label>
                         <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="200"></textarea>
@@ -105,8 +106,7 @@
                     <button href="PageIni.php" id ="bottonDescartar" class="col-12 btn btn-dark d-flex justify-content-between" onclick="fntdescartar(1)">
                             <span>Descartar </span><i id="iconoDescartar" class="bi bi-x-lg"></i>  
                         </button>
-                    </div>      
-                </form>
+                </div>  
             </div>
         </div>
     </section>

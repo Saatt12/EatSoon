@@ -6,17 +6,27 @@ swal({
 
 });
 
-function validar() {
+function fntdescartar(id){
 
-  //Almacenamos los valores
-  nombre = $('#cantidad').val();
+  swal({
+    title: "Estas seguro?",
+    text: "Se cancelara el registro del producto!",
+    icon: "warning",
+    buttons: true,
+    dangerMode: true,
+  })
+  .then((willDelete) => {
+    if (willDelete) {
+      document.getElementById('registroProducto').reset();
+      document.getElementById("imagen").value = "";
+      registroProducto.reset();
 
-  //Comprobamos la longitud de caracteres
-  if (nombre.length < 2) {
-    return true;
-  }
-  else {
-    alert('Maximo 2 caracteres');
-    return false;
-  }
+      swal("Se cancelo el registro con exito!!!", {
+        icon: "success",
+      });
+    } else {
+      swal("No se realizo nada!");
+    }
+  });
+
 }
