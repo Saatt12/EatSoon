@@ -35,11 +35,10 @@
     </script>
 </head>
 <div class= " pt-4 bg-dark ">
-        <h2 style="text-align:center; color: rgb(218, 165, 32);" >  Registra tu Producto</h2>
+        <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" >  Registra tu Producto</h2>
         <div class="row">
         </div>
             <div style="text-align:center" class="col-lg-12 ">
-                
                 <img class="mt-2; img-fluid; " style="color: white ;" src="img/imagenReg.png" width="15%" /> 
             </div> 
         </div>
