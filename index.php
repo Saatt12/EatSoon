@@ -70,7 +70,7 @@
                     <div class="wrap-contenido__hero">
                         <div class="contenido__hero">
                             <h2>¿Que te apetece?</h2>
-                            <p>Búscalo aquí</p>
+                            <p>búscalo aquí</p>
                         </div>
                         <form class="d-flex">
                             <input type="text" class="form-control" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
@@ -90,14 +90,14 @@
                     Distintas categorias</p>
             </div>
             <div class="columna__barra">
-                <img src="img/icons2.png" alt="" style="width: 60px;">
+                <img src="img/icons2.png" alt="" style="width: 60px; height: 55px;">
                 <p>Consigue lo que buscas<br>
-                    Antes de que caduque</p>
+                    antes de que caduque</p>
             </div>
             <div class="columna__barra">
                 <img src="img/icons3.png" alt="" style="width: 60px;">
                 <p>Todos los productos<br>
-                    A mitad de precio</p>
+                    a mitad de precio</p>
             </div>
         </div>
 

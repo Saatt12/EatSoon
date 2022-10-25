@@ -141,6 +141,7 @@
  .barra__container p {
      /*parrafos que estan dentro de columna__barra  */
      color: white;
+     font-size: 1rem;
  }
 
  /*titulo de la lista */
