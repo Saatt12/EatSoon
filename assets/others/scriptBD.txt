@@ -1,0 +1,17 @@
+-- -----------------------------------------------------
+-- Table `eatsoon`.`producto`
+-- -----------------------------------------------------create database eatsoon
+use eatsoon
+
+CREATE TABLE  producto (
+  id_producto INT NOT NULL AUTO_INCREMENT,
+  fecha_publicacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  nombre_producto VARCHAR(45) NOT NULL,
+  precio_producto VARCHAR(45) NOT NULL,
+  fecha_caducidad DATE NOT NULL,
+  desc_producto VARCHAR(500) NOT NULL,
+  cantidad INT(10) NOT NULL,
+  imagen VARCHAR(45) NOT NULL,
+  PRIMARY KEY (id_producto));
+  
+select * from producto

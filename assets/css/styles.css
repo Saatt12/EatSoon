@@ -1,0 +1,285 @@
+body {
+    /*con esto puedo hacer q el contenido de la pagina ocupe todo el alto y largo de la paagina */
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /*esto es para que todas las etiquetas html q sean anclas(<a>) no tengan decoracion en sus textos */
+    text-decoration: none;
+}
+
+li {
+    /*esto es para que todas las etiquetas html q sean listas(<li>) no tengan decoracion en sus estilos por defecto */
+    list-style: none;
+}
+
+/* cabecera */
+
+.text-logo-header {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 7px;
+}
+
+.text-logo-header:hover {
+    color: goldenrod;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu {
+    display: flex;
+    width: 100%;
+    z-index: 99;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+li.menu-item {
+    display: flex;
+    margin: .75rem;
+}
+
+li.menu-item a {
+    padding-top: .5rem;
+    padding-left: .5rem;
+    color: white;
+}
+
+li.menu-item a:hover {
+    color: goldenrod;
+}
+
+.nav__label,
+.nav__input,
+.nav__img {
+    display: none;
+}
+
+/* buscador */
+
+.hero {
+    /*este es el contenedor principal del  */
+    background: url(../img/WallpaperDog-10957631.png) center;
+    /*esta es la imagen de fondo del tipo cn el cuchillo*/
+    background-size: cover;
+    /*este comando indica q el tamaño del fondo sea cubierto completamente */
+    height: 50vh;
+}
+
+.wrap-contenido__hero {
+    /*este es el contenedor de todo lo q está escrito en blanco y la barra buscador */
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    /*con esto le doy un radio de 6pixeles a las esquinas del contenedor */
+    background: linear-gradient(to top, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    /*linear-gradiente hace un difuminado de colores */
+    width: 40vw;
+    margin-top: 1rem;
+}
+
+.contenido__hero {
+    /*contenedor del texto en blanco*/
+    margin-top: 40px;
+    color: white;
+}
+
+.contenido__hero form {
+    /*contenedor del buscador*/
+    position: relative;
+    margin-bottom: 0;
+}
+
+
+/*barra naranja oscuro que está despues  del buscador */
+
+
+.barra__container {
+    background: goldenrod;
+    /*difuminando colores*/
+    margin-bottom: 0;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    /*para que haya espacio entre contenidos */
+}
+
+.columna__barra {
+    /*conenedor de los textos */
+    display: flex;
+}
+
+.barra__container p {
+    /*parrafos que estan dentro de columna__barra  */
+    color: white;
+    font-size: 15px;
+}
+
+/*titulo de la lista */
+
+.container__platillos {
+    /*contenedor principal del titulo */
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.titulo__platillos {
+    /*contenedor secundario del titulo */
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.encabezado {
+    /*titulo */
+    color: white;
+}
+
+/*lista de productos */
+
+.wrap {
+    /*contenedor principal de la lista de productos */
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    /*centrado de contenido */
+    justify-content: center;
+    /*centrado de contenido */
+    max-width: 1200px;
+    /*ancho maximo de 1200px */
+}
+
+.column-4 {
+    /*contenedor principal de la lista de productos, igual q "wrap" pero por necesidad le puse otro nombre */
+    display: grid;
+    /*esto lo utilicé para poder separar la lista en filas y columnas */
+    grid-template-columns: repeat(4, 1fr);
+    /*esto es para decirle q haga 4 columnas cn un tamaño de 1fr x columna */
+    column-gap: 1rem;
+    /*espacio entre columnas */
+    row-gap: 1rem;
+    /*espacio entre filas */
+}
+
+.tarjeta-rest {
+    /*este es el contenedor de la imagen del producto */
+    background-repeat: no-repeat;
+    /*esto sirve para q la imagen no se repita */
+    height: 400px;
+    border-radius: 6px;
+    padding: 1rem .5rem;
+    display: flex;
+    /*ndica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. Muy similar a "grid" */
+    align-items: end;
+}
+
+.wrap-text_tarjeta-rest {
+    /*contenedor del nombProducto, precio, botones de carrito e info y las fechas */
+    color: white;
+    padding: .5rem;
+    border-radius: 6px;
+    background: linear-gradient(to top, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    width: 100%;
+}
+
+.wrap-text_tarjeta-rest h {
+    /*titulo nombProducto */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cta_tarjeta-rest {
+    /*contenedor de los botones del carrito y mas info */
+    display: grid;
+    row-gap: 5px;
+    justify-content: center;
+    grid-template-columns: 100%;
+}
+
+.cta_tarjeta-rest a {
+    /*engloba a todas las anclas <a> dentro de cta_tarjeta-rest */
+    padding: .25rem 1rem;
+    border-radius: 4px;
+    background-color: goldenrod;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.precio_tarjeta-rest span {
+    /*contenedor del precio */
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.container__fechas {
+    /*contenedor de las fechas */
+    display: flex;
+    justify-content: space-between;
+}
+
+.container__fechas span {
+    /*agarra a las etiquetas <span> dentro de container__fechas*/
+    font-size: 1rem;
+    font-weight: normal;
+    text-decoration: none;
+    font-size: 1.2rem;
+    /*fechas subrayadas */
+    text-transform: uppercase;
+    /*texto fechas en mayusculas */
+}
+
+
+
+
+/*media queries para diseño responsivo */
+
+
+
+@media (max-width: 1024px) {
+
+    /*cuando la pantalla tenga un ancho maximo de 1024px */
+    .wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .barra__container p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /*cuando la pantalla tenga un ancho maximo de 768 */
+    .wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .barra__container p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /*cuando la pantalla tenga un ancho maximo de 480px */
+    .wrap {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .barra__container p {
+        font-size: 5px;
+    }
+}
