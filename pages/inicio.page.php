@@ -68,7 +68,7 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content bg-dark">
                                         <div class="modal-header">
-                                            <h1 class="modal-title fs-5">Informacion Adicional</h1>
+                                            <h1 class="modal-title fs-5"><?php echo $producto['nombre_producto'];?></h1>
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
