@@ -73,9 +73,11 @@
                                         </div>
                                         <div class="modal-body">
                                             </span> <?php
-                                                $aux = existeDescripcion($producto['desc_producto']);
-                                                $pru = $producto['desc_producto'];
-                                                echo $pru;
+                                                $aux = $producto['desc_producto'];
+                                                if($aux != null)
+                                                    echo $producto['desc_producto'];
+                                                else
+                                                    echo "El producto no tiene informacion adicional";
                                              ?></span>                                        
                                         </div>
                                         <div class="modal-footer">
