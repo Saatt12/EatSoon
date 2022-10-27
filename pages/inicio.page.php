@@ -59,9 +59,28 @@
                                 <span><?php echo $producto['precio_producto'];?>.Bs</span>
                             </div>
                             <div class="cta_tarjeta-rest">
-                                <a href="">Añadir al carrito </a>
-                                <a href="">Más Información </a>
+                                <button class="btn text-light" style="font-weight: bold; background-color: goldenrod;">Añadir al carrito </button>
+
+                                <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="font-weight: bold; background-color: goldenrod;">Más Información </button>                           
                             </div>
+                            <!-- código modal -->                        
+                            <div class="modal fade" id="my<?php echo $producto['id_producto'];?>" >
+                                <div class="modal-dialog">
+                                    <div class="modal-content bg-dark">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5">Informacion Adicional</h1>
+                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            </span> <?php echo $producto['desc_producto'];?></span>                                        
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-warning text-dark link-light" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                            <!-- fin código modal -->
                         </div>
                     </div>
                 </div>
