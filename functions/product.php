@@ -55,5 +55,8 @@
             $query->execute();
         }
     }
+     function existeDescripcion($descripcion){
+
+     }
 
 ?>

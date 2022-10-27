@@ -63,7 +63,7 @@
 
                                 <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="font-weight: bold; background-color: goldenrod;">Más Información </button>                           
                             </div>
-                            <!-- código modal -->                        
+                            <!-- código modal -->                                    
                             <div class="modal fade" id="my<?php echo $producto['id_producto'];?>" >
                                 <div class="modal-dialog">
                                     <div class="modal-content bg-dark">
@@ -72,7 +72,11 @@
                                             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                                         </div>
                                         <div class="modal-body">
-                                            </span> <?php echo $producto['desc_producto'];?></span>                                        
+                                            </span> <?php
+                                                $aux = existeDescripcion($producto['desc_producto']);
+                                                $pru = $producto['desc_producto'];
+                                                echo $pru;
+                                             ?></span>                                        
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-warning text-dark link-light" data-bs-dismiss="modal">Close</button>
