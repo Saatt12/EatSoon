@@ -36,11 +36,7 @@
         }
     }
 
-    function existProductExpired($con){
-        $query = $con->prepare("SELECT * FROM producto WHERE fecha_caducidad <= CURDATE()");
-        $query->execute();
-        return $query->fetchAll();
-    }
+    
 
     /** Elimina los productos que expiraron */
     function deleteExpireds($con, $dir){
