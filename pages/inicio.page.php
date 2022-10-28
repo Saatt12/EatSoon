@@ -78,7 +78,11 @@
                                                     echo $producto['desc_producto'];
                                                 else
                                                     echo "El producto no tiene informacion adicional";
-                                             ?></span>                                        
+                                             ?></span>    
+                                             <p> </p>
+                                             <span><span style="text-transform:uppercase; color:goldenrod;">publicacion:  </span><?php echo $producto['fecha_publicacion'];?></span>
+                                             <p> </p>
+                                             <span><span style="text-transform:uppercase; color:goldenrod;">vencimiento:  </span><?php echo $producto['fecha_caducidad'];?></span>                                    
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-warning text-dark link-light" data-bs-dismiss="modal">Close</button>
