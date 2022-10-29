@@ -51,6 +51,7 @@
                             <button class="btn btn-info mt-3 ">Descartar</button>
                             <button class="btn btn-warning mt-3 ">Registrar</button>
                         </div>
+                    <small class="d-inline-block text-muted mt-3">Bienvenido a Eat-Soon</small>
                     </form>
                     
                 </div>

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styles.css">
-    <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    
 
     <title><?=$title?></title>
     <script type="text/javascript">  
@@ -71,5 +71,6 @@
 <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="<?=RUTA?>/assets/js/Alerts.js"></script>  <!--Conecta el js-->
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 </body>
 </html>

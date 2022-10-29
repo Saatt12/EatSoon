@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
 body {
     /*con esto puedo hacer q el contenido de la pagina ocupe todo el alto y largo de la paagina */
     margin: 0;
@@ -18,7 +25,7 @@ li {
 
 .text-logo-header {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: calc(1.325rem + .9vw);
     color: white;
     text-decoration: none;
     padding-left: 7px;
@@ -93,11 +100,8 @@ li.menu-item a:hover {
     color: white;
 }
 
-.contenido__hero form {
-    /*contenedor del buscador*/
-    position: relative;
-    margin-bottom: 0;
-}
+.contenido__hero h2 {}
+
 
 
 /*barra naranja oscuro que está despues  del buscador */
@@ -196,7 +200,7 @@ li.menu-item a:hover {
 
 .wrap-text_tarjeta-rest h {
     /*titulo nombProducto */
-    font-size: 1.5rem;
+    font-size: calc(1.325rem + .9vw);
     font-weight: bold;
 }
 
