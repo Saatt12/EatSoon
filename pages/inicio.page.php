@@ -9,8 +9,8 @@
 
                     </div>
                     <div class="input-group rounded">
-                        <input type="search" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
-                        id="buscador" maxlength="40" aria-label="Search" aria-describedby="search-addon">
+                        <input type="text" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
+                        id="buscador" maxlength="40">
                         <span class="input-group border-0" id="search-addon">
                         <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 8px"></i>
                         </span>
@@ -49,7 +49,7 @@
             <?php foreach($productos as $producto): ?>
                 <div class="tarjeta-rest" style="background: url(<?php echo RUTA . '/storage/' . $producto['imagen']?>) center; background-size: cover;">
                     <div class="wrap-text_tarjeta-rest">
-                        <h1><?php echo $producto['nombre_producto'];?></h1>
+                        <h2><?php echo $producto['nombre_producto'];?></h2>
                         <div class="cta-wrap_tarjeta-rest">
                             <div class="container__fechas">
                                 <span><span style="font-weight:bold;">pub:</span><?php echo $producto['fecha_publicacion'];?></span>
