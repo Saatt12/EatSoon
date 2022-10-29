@@ -6,11 +6,16 @@
                     <div class="contenido__hero">
                         <h2>¿Que te apetece?</h2>
                         <p>búscalo aquí</p>
+
                     </div>
-                    <form class="d-flex">
-                        <input type="text" class="form-control" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
-                            id="buscador" maxlength="40">
-                    </form>
+                    <div class="input-group rounded">
+                        <input type="search" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
+                        id="buscador" maxlength="40" aria-label="Search" aria-describedby="search-addon">
+                        <span class="input-group border-0" id="search-addon">
+                        <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 8px"></i>
+                        </span>
+                        
+                    </div>
                 </div>
             </div>
         </div>
