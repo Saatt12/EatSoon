@@ -7,7 +7,10 @@
 
     $con = conexion($db_config);
     
-    
+    $folder_save = 'storage/'; // carpeta de donde se eliminaran tus imagenes
+
+    deleteExpireds($con, $folder_save); //eliminar productos expirados
+
     $productos = getProducts($con);
     
 
