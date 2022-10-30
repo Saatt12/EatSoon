@@ -12,7 +12,7 @@
                         <input type="text" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
                         id="buscador" maxlength="40">
                         <span class="input-group border-0" id="search-addon">
-                        <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 8px"></i>
+                        <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 10px"></i>
                         </span>
                         
                     </div>
@@ -64,9 +64,18 @@
                                 <span><?php echo $producto['precio_producto'];?>.Bs</span>
                             </div>
                             <div class="cta_tarjeta-rest">
-                                <button class="btn text-light" style="font-weight: bold; background-color: goldenrod;">Añadir al carrito </button>
+                                <button class="btn text-light" style="padding: .25rem 1rem;
+                                border-radius: 4px;
+                                background-color: goldenrod;
+                                color: white;
+                                font-weight: bold;
+                                text-align: center;">Añadir al carrito </button>
 
-                                <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="font-weight: bold; background-color: goldenrod;">Más Información </button>                           
+                                <utton type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="padding: .25rem 1rem;
+                                border-radius: 4px;                              background-color: goldenrod;
+                                color: white;
+                                font-weight: bold;
+                                text-align: center;">Más Información </button>                           
                             </div>
                             <!-- código modal -->                                    
                             <div class="modal fade" id="my<?php echo $producto['id_producto'];?>" >
