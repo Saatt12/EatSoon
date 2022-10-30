@@ -10,25 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
     <script src="<?=RUTA?>/assets/js/main.js"></script>
-    <script>
-        function toggleButton()  
-        {
-            var nom = $('#nombre_producto').val();
-            var can = $('#cantidad').val();
-            var pre = $('#precio').val();
-            var fec = $('#fecha_caducidad').val();
-            var arc = $('#archivoInput').val();
-            var des = $('#desc_producto').val();
 
-            if (nom && can && pre && fec && arc && des) {
-                $('#botton').attr('disabled', false);
-            } else {
-                $('#botton').attr('disabled', true);
-            }
-        }
-          
-
-    </script>
 </head>
 <body>
 
