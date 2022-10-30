@@ -5,6 +5,8 @@
     require './functions/product.php';
 
 
+
+    
     $con = conexion($db_config);
     
     $folder_save = 'storage/'; // carpeta de donde se eliminaran tus imagenes
