@@ -58,7 +58,7 @@
 
             <div class="mb-4">
                 <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> INFORMACIÓN ADICIONAL</label>
-                <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="200"></textarea>
+                <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="45"></textarea>
                 <div class="mensaje text-danger"></div>
             </div>                                 
             <div class="mb-2">

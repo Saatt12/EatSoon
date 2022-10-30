@@ -100,7 +100,7 @@ li.menu-item a:hover {
     color: white;
 }
 
-.contenido__hero h2 {}
+
 
 
 
@@ -198,9 +198,9 @@ li.menu-item a:hover {
     width: 100%;
 }
 
-.wrap-text_tarjeta-rest h {
+.wrap-text_tarjeta-rest h2 {
     /*titulo nombProducto */
-    font-size: calc(1.325rem + .9vw);
+    font-size: 1.2rem;
     font-weight: bold;
 }
 
