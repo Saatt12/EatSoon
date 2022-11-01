@@ -28,24 +28,25 @@
                             
                         <tr>
                             <td><i class="bi bi-person " ></i>Nombres:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="nombre" name="nombre" placeholder= "Ingrese sus nombres" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required></td>
+                            <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre" placeholder= "Ingrese sus nombres" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
+                        
                         </tr>
                            
                         <tr>
                             <td><i class="bi bi-person" ></i>Apellidos:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="apellido" name="lastname" placeholder= "Ingrese sus apellidos" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required></td>
+                            <td><input class="inputAlinear" id="apellido" name="lastname" placeholder= "Ingrese sus apellidos" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
                         </tr>
                         <tr class="filaTabla">
-                            <td><i class="bi bi-credit-card-2-front"></i>C.i:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="ci" name="ci" placeholder= "Ingrese c.i" oninput="this.value = this.value.replace(/[^0-9]/,'')" required maxlength="10"></td>
+                            <td><i class="bi bi-credit-card-2-front"></i>C.i:<span class="number-danger">*</span></td>
+                            <td><input class="inputAlinear" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="ci" name="ci" placeholder= "Ingrese C.I."   required   pattern="^[0-9]+"  minlength ="7" maxlength ="10"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i>Dirección:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="direccion" name="dirección" placeholder= "Ingrese dirección" required maxlength="50"></td>
+                            <td><input class="inputAlinear" id="direccion" name="dirección" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-phone"></i>Telefono:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="telefono" name="telefono" placeholder= "Ingrese número de telefono" oninput="this.value = this.value.replace(/[^0-9]/,'')" required maxlength="8"></td>
+                            <td><i class="bi bi-phone"></i>Telefono:<span class="number-danger">*</span></td>
+                            <td><input class="inputAlinear" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" id="telefono" name="telefono" placeholder= "Ingrese número de telefono"   required  min="4444444" max="77777777" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i>Email:<span class="text-danger">*</span></td>
