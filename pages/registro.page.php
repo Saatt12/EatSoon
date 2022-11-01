@@ -17,7 +17,7 @@
         <form id = "registroProducto" action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" enctype="multipart/form-data">
             <div class="mb-4">
                 <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
-                <input type="text" maxlength ="20" class="form-control" name="nombre_producto" id="nombre_producto"  placeholder= "Ingrese nombre del producto"  
+                <input type="text" maxlength ="40" class="form-control" name="nombre_producto" id="nombre_producto"  placeholder= "Ingrese nombre del producto"  
                 oninput="this.value = this.value.replace(/[^a-z A-Z 0-9]/,'')" required>
                 <div class="text-danger"></div>  
             </div>
@@ -58,7 +58,7 @@
 
             <div class="mb-4">
                 <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> INFORMACIÓN ADICIONAL</label>
-                <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="45"></textarea>
+                <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="150"></textarea>
                 <div class="mensaje text-danger"></div>
             </div>                                 
             <div class="mb-2">

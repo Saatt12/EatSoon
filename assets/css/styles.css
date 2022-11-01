@@ -196,6 +196,7 @@ li.menu-item a:hover {
     border-radius: 6px;
     background: linear-gradient(to top, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
     width: 100%;
+    word-break: break-word;
 }
 
 .wrap-text_tarjeta-rest h2 {
