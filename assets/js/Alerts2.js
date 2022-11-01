@@ -7,12 +7,12 @@ swal({
   });
   
   function fntdescartar(id){
-  
+    buttons: ["Cancelar", "Aceptar"],
     swal({
       title: "Estas seguro?",
       text: "Se cancelara el registro del producto!",
       icon: "warning",
-      buttons: true,
+      buttons: ["Cancelar", "Aceptar"],
       dangerMode: true,
     })
     .then((willDelete) => {
