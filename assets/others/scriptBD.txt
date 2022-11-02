@@ -1,6 +1,7 @@
 -- -----------------------------------------------------
 -- Table `eatsoon`.`producto`
--- -----------------------------------------------------create database eatsoon
+-- -----------------------------------------------------
+create database eatsoon
 use eatsoon
 
 CREATE TABLE  producto (
@@ -14,4 +15,16 @@ CREATE TABLE  producto (
   imagen VARCHAR(45) NOT NULL,
   PRIMARY KEY (id_producto));
   
-select * from producto
+-- -----------------------------------------------------
+-- Table `eatsoon`.`usuario`
+-- -----------------------------------------------------
+
+ create table usuario(
+  ci INT NOT NULL,
+  nombre varchar (20) NOT NULL,
+  apellido varchar(20) NOT NULL,
+  direccion varchar(50) NOT NULL,
+  telefono int NOT NULL,
+  correo VARCHAR(30) NOT NULL,
+  contraseña VARCHAR(30) NOT NULL,
+  primary key(ci));
