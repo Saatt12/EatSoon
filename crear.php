@@ -2,7 +2,7 @@
 
     require './config/env.php';
     require './config/conexion.php';
-// require './functions/product.php'; 
+    require './functions/cuenta.php'; 
 //  require './functions/file.php';
 
     $con = conexion($db_config);
@@ -19,21 +19,19 @@
             'imagen' => $_FILES['imagen']
         ];
 
-//  $folder_save = 'storage/'; // carpeta donde quieres guardar tus imagenes
 
- //        $create = createProduct($con, $data, $folder_save, function($ruta, $file){ 
-   //         return uploadFile($ruta, $file); //manipular archivo
-  //      });
 
-    //    if(!$create){
-   //         echo "El producto ingresado ya existe";
-    //    }
+    $create = createUser($con, $data);
 
-        header('Location: registrar.php');
+    if(!$create){
+         echo "El producto ingresado ya existe";
+    }
+
+        header('Location: crear.php');
     }
     
     
-    $title = "Registrar Producto"; // Nombre del title
+    $title = "Creacion de Cuenta"; // Nombre del title
 
     $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
     require './templates/home.template.php'; // Require template
