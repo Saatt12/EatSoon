@@ -5,14 +5,14 @@
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-                    <img src="imagenes/logoBurger.png" alt="IMG" width="120%">
+                    <img src="img/logoBurger.png" alt="IMG" width="120%">
                 </div>
             </div>
             <!--columna del formulario-->
             <div class="col-xl-7 col-lg-12 d-flex register-bg" >
                 
                 <div class="container align-self-center p-6">
-                    <h1 class="font-weight-bold mb-3"><img src="imagenes/user3.png" width="15%" /> Crear Cuenta</h1>
+                    <h1 class="font-weight-bold mb-3"><img src="img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
                     <form action="" method="POST" class="form-horizontal" style="margin:0 auto" >                        
