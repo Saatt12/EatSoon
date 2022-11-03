@@ -58,7 +58,7 @@
                         </li>
                         <li class="menu-item">
                             <i class="bi-box-arrow-in-right" style="font-size: 1.5rem; color: white;"></i>
-                            <a href="/" id="nav-crear">Crear cuenta</a>
+                            <a href="crear.php" id="nav-crear">Crear cuenta</a>
                         </li>
                     </ul>
                 </nav>
