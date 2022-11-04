@@ -289,7 +289,7 @@ li.menu-item a:hover {
 }
 
 body {
-    font-family: 'popins', sans-ser;
+    font-family: 'Poppins', sans-ser;
     font-size: 1.1rem;
     font-weight: 300;
     background-color: var(--color-grey);

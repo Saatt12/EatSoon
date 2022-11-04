@@ -50,6 +50,10 @@
                             <td><i class="bi bi-key"  ></i>Contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
+                        <tr>
+                            <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
+                            <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
+                        </tr>
                     </table>
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
@@ -57,7 +61,7 @@
                             <button class="btn btn-info mt-3 " >Descartar </button>
                             <button class="btn btn-warning mt-3" >publicar </button>
                         </div>
-                        <small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>
+                        <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->
                     
                     </form>
 
