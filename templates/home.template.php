@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styles.css">
-    <link rel="stylesheet" href="<?=RUTA?>/assets/css/styleRP.css">
+    <!-- <link rel="stylesheet" href="<?=RUTA?>/assets/css/styleRP.css"> -->
     
 
     <title><?=$title?></title>
@@ -69,6 +69,8 @@
 
         <?php require $page; ?>
 
+
+<script src="<?=RUTA?>/assets/js/paginacion.js"></script>        
 <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script src="<?=RUTA?>/assets/js/Alerts.js"></script>  <!--Conecta el js-->
