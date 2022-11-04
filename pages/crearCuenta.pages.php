@@ -52,7 +52,7 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
+                            <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
                     </table>
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
