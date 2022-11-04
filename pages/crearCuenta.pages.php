@@ -15,7 +15,7 @@
                     <h1 class="font-weight-bold mb-3"><img src="img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
-                    <form action="" method="POST" class="form-horizontal" style="margin:0 auto" >                        
+                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
                      
                     <table class="formularioTabla">
                         
