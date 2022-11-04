@@ -7,7 +7,7 @@
     }
 
     function getProducts($con){
-        $query = $con->prepare('SELECT * FROM producto');
+        $query = $con->prepare('SELECT * FROM producto WHERE fecha_publicacion ORDER BY fecha_publicacion desc');
         $query->execute();
         return $query->fetchAll();
     }
