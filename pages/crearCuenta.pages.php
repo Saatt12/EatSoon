@@ -32,7 +32,7 @@
                         </tr>
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i>C.i:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I."   required   pattern="^[0-9]+"  minlength ="7" maxlength ="10"></td>
+                            <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i>Dirección:<span class="text-danger">*</span></td>
