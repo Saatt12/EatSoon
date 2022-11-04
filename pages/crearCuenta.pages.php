@@ -5,14 +5,17 @@
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-                    <img src="img/logoBurger.png" alt="IMG" width="120%">
+
+=======
+                    <img src="./assets/img/logoBurger.png" alt="IMG" width="120%">
+
                 </div>
             </div>
             <!--columna del formulario-->
             <div class="col-xl-7 col-lg-12 d-flex register-bg" >
                 
                 <div class="container align-self-center p-6">
-                    <h1 class="font-weight-bold mb-3"><img src="img/user3.png" width="15%" /> Crear Cuenta</h1>
+                    <h1 class="font-weight-bold mb-3"><img src="./assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
@@ -32,11 +35,11 @@
                         </tr>
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i>C.i:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I."   required   pattern="^[0-9]+"  minlength ="7" maxlength ="10"></td>
+                            <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i>Dirección:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="direccion" name="dirección" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
+                            <td><input class="inputAlinear" id="direccion" name="direccion" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i>Telefono:<span class="number-danger">*</span></td>
@@ -50,14 +53,21 @@
                             <td><i class="bi bi-key"  ></i>Contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
-                    </table>
+                        <tr>
+                            <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
+                            <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
+                        </tr>
+                    
+                        
+                    </table> 
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
-
-                        <div class="form-group mb-2">
-                            <button class="btn btn-info mt-3 " >Descartar </button>
-                            <button class="btn btn-warning mt-3 ">Registrar</button>
-                        </div>
-                        <small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>
+                        <tr>
+                            <div class="form-group mb-2">
+                                <button class="btn btn-info mt-3 btn-space" >Cancelar </button>
+                                <button class="btn btn-warning mt-3 btn-space" >Aceptar </button>
+                            </div>
+                        </tr>  
+                        <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->
                     
                     </form>
 

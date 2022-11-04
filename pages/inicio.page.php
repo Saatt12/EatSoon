@@ -12,7 +12,7 @@
                         <input type="text" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
                         id="buscador" maxlength="40">
                         <span class="input-group border-0" id="search-addon">
-                        <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 10px"></i>
+                        <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 7px"></i>
                         </span>
                         
                     </div>
@@ -103,7 +103,7 @@
                                             border-radius: 4px;                              background-color: goldenrod;
                                             color: white;
                                             font-weight: bold;
-                                            text-align: center;">Close</button>
+                                            text-align: center;">Cerrar</button>
                                         </div>
                                     </div>
                                 </div>
@@ -114,9 +114,30 @@
                 </div>
             <?php endforeach; ?>
         </div>
-        <div class="container__platillos bg-dark">
-        <div class="titulo__platillos">
-            <h1 class="encabezado"></h1>
-        </div>
+        
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center pt-4">
+                <li class="page-item">
+                    <a class="page-link " href="#" aria-label="Previous" id="pag-anterior">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#" id="pag-uno">1</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="pag-dos">2</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="pag-tres">3</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="pag-cuatro">4</a></li>
+                <li class="page-item"><a class="page-link" href="#" id="pag-cinco">5</a></li>
+                <li class="page-item">
+                <a class="page-link " href="#" aria-label="Next" id="pag-siguiente">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+                </li>
+            </ul>
+        </nav>
+        
     </div>
+    
 </main>
+<!-- <footer>
+    <div style="background-color:red; height: 17.7vh;"></div>
+</footer> -->
