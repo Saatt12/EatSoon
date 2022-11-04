@@ -5,7 +5,7 @@
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-                    <img src="img/logoBurger.png" alt="IMG" width="120%">
+                    <img src="img/logoBurger" alt="IMG" width="120%">
                 </div>
             </div>
             <!--columna del formulario-->
@@ -54,13 +54,16 @@
                             <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
-                    </table>
+                    
+                        
+                    </table> 
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
-
-                        <div class="form-group mb-2">
-                            <button class="btn btn-info mt-3 " >Descartar </button>
-                            <button class="btn btn-warning mt-3" >publicar </button>
-                        </div>
+                        <tr>
+                            <div class="form-group mb-2">
+                                <button class="btn btn-info mt-3 btn-space" >Cancelar </button>
+                                <button class="btn btn-warning mt-3 btn-space" >Aceptar </button>
+                            </div>
+                        </tr>  
                         <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->
                     
                     </form>

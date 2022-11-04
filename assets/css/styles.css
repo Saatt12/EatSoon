@@ -280,6 +280,11 @@ li.menu-item a:hover {
 }
 
 /*Estilos de la pagina crear cuenta*/
+.btn-space {
+    
+    
+    align-items:center;
+}
 :root {
     --color-dark: #343a40;
     --color-dark-x: #2d343f;
