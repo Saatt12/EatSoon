@@ -9,7 +9,7 @@
     <link href="<?=RUTA?>/assets/css/bootstrap/bootstrap.min.css" rel="stylesheet"  >
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <script src="<?=RUTA?>/assets/js/main.js"></script>
+    
 
 </head>
 <body>
@@ -18,8 +18,8 @@
 
         <?php require $page; ?>
 
-
-<script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="<?=RUTA?>/assets/js/main.js"></script>
+    <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="<?=RUTA?>/assets/js/Alerts2.js"></script>  <!--Conecta el js-->
 </body>
