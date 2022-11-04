@@ -36,7 +36,7 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i>Dirección:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="direccion" name="dirección" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
+                            <td><input class="inputAlinear" id="direccion" name="direccion" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i>Telefono:<span class="number-danger">*</span></td>
@@ -55,7 +55,7 @@
 
                         <div class="form-group mb-2">
                             <button class="btn btn-info mt-3 " >Descartar </button>
-                            <button class="btn btn-warning mt-3 ">Registrar</button>
+                            <button class="btn btn-warning mt-3" >publicar </button>
                         </div>
                         <small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>
                     
