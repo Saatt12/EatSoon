@@ -17,7 +17,7 @@
     <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" >  Registra tu Producto</h2>
     <div class="row">
     </div>
-        <div style="text-align:center" class="col-lg-12 ">
+        <div style="text-align:center" class="col-lg-12">
             <img src="<?php echo RUTA ?>/assets/img/pngwing.com.png" class="mt-2; img-fluid; " style="color: white ;"  width="15%" /> 
         </div> 
     </div>
