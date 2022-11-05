@@ -14,8 +14,7 @@
 </head>
 <body>
 
-<a href="index.php" class="col-12 btn btn-warning d-flex" > <span class="bi bi-arrow-left-circle-fill"></span>  Inicio Vendedor</a>
-
+    
         <?php require $page; ?>
 
         <script src="<?=RUTA?>/assets/js/main.js"></script>

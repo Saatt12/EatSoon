@@ -1,4 +1,19 @@
-<div class="pt-4 bg-dark">
+<header  class="bg-warning border-bottom">
+    <div class="navbar-header p-1">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill" href="index.php"> Volver</a>
+    </div>
+</header>
+<!--<div class="bg-warning">
+    <button  id ="botton" class="col-12 btn btn-warning d-flex " >
+        <span href="index.php" class="bi bi-arrow-left-circle-fill"> Volver </span>         
+    </button>
+    
+    <a href="index.php" class=" btn d-flex" > <span class="bi bi-arrow-left-circle-fill"> Volver </span>  </a>
+    
+</div>
+-->
+    
+<div class="pt-4 bg-dark ">
     <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" >  Registra tu Producto</h2>
     <div class="row">
     </div>
