@@ -1,11 +1,13 @@
 <?php
     /** URL raiz del proyecto */
 
+
     define('RUTA', 'http://localhost:8080/Proyecto/EatSoon');
+
 
     $db_config = [
         'db_user' => 'root',
-        'db_pass' => 'Delgadillo',
+        'db_pass' => '',
         'db_name' => 'eatsoon',
         'db_host' => '127.0.0.1',
         'db_port' => '3306'

@@ -9,6 +9,7 @@ body {
     /*con esto puedo hacer q el contenido de la pagina ocupe todo el alto y largo de la paagina */
     margin: 0;
     padding: 0;
+    min-height: 100%;
 }
 
 a {
@@ -153,7 +154,6 @@ li.menu-item a:hover {
 .wrap {
     /*contenedor principal de la lista de productos */
     margin: 0 auto;
-    padding: 0;
     height: 100%;
     padding: 0 2%;
     display: flex;
@@ -236,7 +236,23 @@ li.menu-item a:hover {
     /*texto fechas en mayusculas */
 }
 
+.page-item {
+    width: 4rem;
+}
 
+
+
+.page-link {
+    color: white;
+    border-style: none;
+    background: none;
+    text-align: center;
+}
+
+.page-link:hover {
+    color: white;
+    background-color: goldenrod;
+}
 
 
 /*media queries para diseño responsivo */
@@ -277,9 +293,14 @@ li.menu-item a:hover {
     .barra__container p {
         font-size: 5px;
     }
-}
 
+<<<<<<< HEAD
 /*Estilos de la pagina crear cuenta*/
+.btn-space {
+    
+    
+    align-items:center;
+}
 :root {
     --color-dark: #343a40;
     --color-dark-x: #2d343f;
@@ -371,4 +392,6 @@ body {
     .register-bg {
         min-height: 50vh;
     }
+=======
+>>>>>>> 004640848954ba5574b6d45454533fd737e9f8e4
 }

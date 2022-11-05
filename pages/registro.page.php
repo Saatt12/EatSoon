@@ -16,23 +16,23 @@
         <?php //Este es el formulario donde se captura los datos que el usuario introduce de la H3?>
         <form id = "registroProducto" action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" enctype="multipart/form-data">
             <div class="mb-4">
-                <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> NOMBRE DEL PRODUCTO</label>
+                <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> Nombre del producto <span class="text-danger">*</span></label>
                 <input type="text" maxlength ="40" class="form-control" name="nombre_producto" id="nombre_producto"  placeholder= "Ingrese nombre del producto"  
                 oninput="this.value = this.value.replace(/[^a-z A-Z 0-9]/,'')" required>
-                <div class="text-danger"></div>  
+                <div class="text-danger"></div> 
             </div>
             <div class=" bg-dark mt-3"></div>
             <div class="mb-4">
-                <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> CANTIDAD</label>
+                <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> Cantidad <span class="text-danger">*</span></label>
                 <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
                 placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"   oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-'); required>
                <div class="number-danger; "></div> 
             </div>
             <div class="mb-4">
-                <label for="precio_producto"><i class="bi bi-cash-coin"></i> PRECIO</label>
+                <label for="precio_producto"><i class="bi bi-cash-coin"></i> Precio <span class="text-danger">*</span></label>
                 <input type="number"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "3" step="0.01" name="precio_producto" class="form-control" id="precio"  
                 placeholder= ".Bs"  min="1" max="500"  pattern="^[0-9]+" required>
-                <div class="number-danger; "></div> 
+                <div class="number-danger "></div> 
                 
             </div>
 
@@ -45,22 +45,24 @@
         
                 ?>
 
-                <label for="fecha_caducidad"><i class="bi bi-calendar2-day-fill"></i> FECHA DE VENCIMIENTO</label>
+                <label for="fecha_caducidad"><i class="bi bi-calendar2-day-fill"></i> Fecha de vencimiento <span class="text-danger">*</span></label>
                 <input type="date" name="fecha_caducidad" min="<?=$fechamin;?>" max="<?=$fechamax;?>"  class="form-control" id="fecha_caducidad" required>
                 <div class="date-danger"></div> 
             </div>
             
             <div class="mb-4">
-                <label for="imagen"><i class="custom-file-upload"></i> IMAGEN DEL PRODUCTO</label>
+                <label for="imagen"><i class="custom-file-upload bi bi-image-fill"></i> Imagen del producto <span class="text-danger">*</span></label>
                 <input type="file" class="form-control" name="imagen" id="archivoInput"  onchange="return validarExt()" required></input>
                 <div id ="visorArchivo" class="image-danger"></div>  
             </div> 
 
             <div class="mb-4">
-                <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> INFORMACIÓN ADICIONAL</label>
+                <label for="desc_producto"> <i class="bi bi-question-square-fill" ></i> Información adicional</label>
                 <textarea name="desc_producto" id="desc_producto" class="form-control" onchange="toggleButton()" placeholder="inf.." maxlength="150"></textarea>
                 <div class="mensaje text-danger"></div>
-            </div>                                 
+                <p class="text-muted mb-2">(*)campos obligatorios</p>
+            </div> 
+                                            
             <div class="mb-2">
                 <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
                     <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
