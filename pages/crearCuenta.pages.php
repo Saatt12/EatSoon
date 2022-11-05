@@ -40,7 +40,7 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i> &nbsp Telefono:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="4444444" max="77777777" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
+                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="4444444" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i> &nbsp Email:<span class="text-danger">*</span></td>
