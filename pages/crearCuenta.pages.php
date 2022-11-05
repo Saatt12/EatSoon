@@ -5,14 +5,14 @@
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-                    <img src="img/logoBurger.png" alt="IMG" width="120%">
+                    <img src="assets/img/logoBurger.png" alt="IMG" width="120%">
                 </div>
             </div>
             <!--columna del formulario-->
             <div class="col-xl-7 col-lg-12 d-flex register-bg" >
                 
                 <div class="container align-self-center p-6">
-                    <h1 class="font-weight-bold mb-3"><img src="img/user3.png" width="15%" /> Crear Cuenta</h1>
+                    <h1 class="font-weight-bold mb-3"><img src="assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
@@ -58,8 +58,9 @@
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
                         <div class="form-group mb-2">
-                            <button class="btn btn-info mt-3 " >Descartar </button>
-                            <button class="btn btn-warning mt-3" >publicar </button>
+                            <button class="btn btn-info mt-3 " id ="bottonDescartarr" onclick="reset()" >Descartar </button>
+                    
+                            <button class="btn btn-warning mt-3"  >Publicar <a href="crear.php" class="subir">**Texto del Boton**</a> </button>
                         </div>
                         <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->
                     
@@ -69,7 +70,6 @@
               </div>
                 
 
-            
         </div>
     </section>
 
