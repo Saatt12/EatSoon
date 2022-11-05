@@ -1,8 +1,23 @@
-<div class="pt-4 bg-dark">
+<header  class="bg-warning border-bottom">
+    <div class="navbar-header p-1">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill" href="index.php"> &nbsp &nbsp Volver</a>
+    </div>
+</header>
+<!--<div class="bg-warning">
+    <button  id ="botton" class="col-12 btn btn-warning d-flex " >
+        <span href="index.php" class="bi bi-arrow-left-circle-fill"> Volver </span>         
+    </button>
+    
+    <a href="index.php" class=" btn d-flex" > <span class="bi bi-arrow-left-circle-fill"> Volver </span>  </a>
+    
+</div>
+-->
+    
+<div class="pt-4 bg-dark ">
     <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" >  Registra tu Producto</h2>
     <div class="row">
     </div>
-        <div style="text-align:center" class="col-lg-12 ">
+        <div style="text-align:center" class="col-lg-12">
             <img src="<?php echo RUTA ?>/assets/img/pngwing.com.png" class="mt-2; img-fluid; " style="color: white ;"  width="15%" /> 
         </div> 
     </div>
@@ -26,7 +41,7 @@
                 <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> Cantidad <span class="text-danger">*</span></label>
                 <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
                 placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"   oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-'); required>
-               <div class="number-danger; "></div> 
+               <div class="number-danger "></div> 
             </div>
             <div class="mb-4">
                 <label for="precio_producto"><i class="bi bi-cash-coin"></i> Precio <span class="text-danger">*</span></label>
