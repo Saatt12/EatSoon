@@ -3,7 +3,7 @@
 
 
 
-    define('RUTA', 'http://localhost/ProyectoEatSoon\EatSoon');
+    define('RUTA', 'http://localhost:8080/Proyecto/EatSoon');
 
 
 
