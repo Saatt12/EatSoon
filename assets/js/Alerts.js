@@ -13,7 +13,13 @@
 */
 
 
+swal({
+  title: "Bienvenido a EatSoon!",
+  text: "Disfruta!!!",
+  icon: "success",
+  button: "Continuar!",
 
+});
 
 
 
@@ -33,6 +39,7 @@ function fntdescartar(id){
       document.getElementById('registroProducto').reset();
       document.getElementById("imagen").value = "";
       registroProducto.reset();
+ 
 
       swal("Se cancelo el registro con exito!!!", {
         icon: "success",
@@ -42,17 +49,16 @@ function fntdescartar(id){
     }
   });
 
+
+
 }
+
+
+
+
   
   
-  
-  swal({
-      title: "Bienvenido a EatSoon!",
-      text: "Disfruta!!!",
-      icon: "success",
-      button: "Continuar!",
-  
-    });
+ 
   
   /* 
   Codigo del menaje para los elminiar productos o cancelar registro

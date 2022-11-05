@@ -14,7 +14,6 @@
 </head>
 <body>
 
-<a href="index.php" class="col-12 btn btn-warning d-flex" > <span class="bi bi-arrow-left-circle-fill"></span> __Inicio Vendedor</a>
 
         <?php require $page; ?>
 
