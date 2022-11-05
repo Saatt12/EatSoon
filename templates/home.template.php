@@ -34,7 +34,7 @@
             <div class="container-logo d-flex justify-content-start align-items-center">
                 <div class="navbar-brand">
                     <img src="<?=RUTA?>/assets/img/hamburguesa-con-queso.png" alt="Avatar Logo" style="width:40px;">
-                    <a href="/" class="text-logo-header">EatSoon</a>
+                    <a href="index.php" class="text-logo-header">EatSoon</a>
                 </div>
             </div>
             <div class="container-navbar">
