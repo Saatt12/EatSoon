@@ -15,7 +15,7 @@
                     <h1 class="font-weight-bold mb-3"><img src="./assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
-                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
+                    <form id="form" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
                      
                     <table class="formularioTabla">
                         
@@ -51,8 +51,10 @@
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
                         <tr>
+
                             <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
+                         
                         </tr>
                     </table>
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
@@ -72,7 +74,7 @@
             
         </div>
     </section>
-
+    <script src="confirmarContraseña.js"></script>  
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
