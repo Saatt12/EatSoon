@@ -1,6 +1,6 @@
 <header  class="bg-warning border-bottom">
     <div class="navbar-header p-1">
-        <a class="btn btn-warning bi bi-arrow-left-circle-fill" href="index.php"> Volver</a>
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill" href="index.php"> &nbsp &nbsp Volver</a>
     </div>
 </header>
 <!--<div class="bg-warning">
@@ -41,7 +41,7 @@
                 <label for="cantidad"><i class="bi bi-cart-plus-fill"></i> Cantidad <span class="text-danger">*</span></label>
                 <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"   maxlength = "2" name="cantidad" class="form-control" id="cantidad" 
                 placeholder= "Unidades"  min="1" max="99" pattern="^[0-9]+"   oninput="this.value = this.value.replace(/[^a-z A-Z] /,'-'); required>
-               <div class="number-danger; "></div> 
+               <div class="number-danger "></div> 
             </div>
             <div class="mb-4">
                 <label for="precio_producto"><i class="bi bi-cash-coin"></i> Precio <span class="text-danger">*</span></label>
