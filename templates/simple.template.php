@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    
+
         <?php require $page; ?>
 
         <script src="<?=RUTA?>/assets/js/main.js"></script>

@@ -2,7 +2,10 @@
     /** URL raiz del proyecto */
 
 
+
     define('RUTA', 'http://localhost/ProyectoEatSoon\EatSoon');
+
+
 
 
     $db_config = [
