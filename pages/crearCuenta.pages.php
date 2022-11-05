@@ -5,25 +5,16 @@
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-<<<<<<< HEAD
-                    <img src="assets/img/logoBurger.png" alt="IMG" width="120%">
-=======
 
-=======
                     <img src="./assets/img/logoBurger.png" alt="IMG" width="120%">
 
->>>>>>> 988ed5c216261acad12e91f7cf27351896d5d3e7
                 </div>
             </div>
             <!--columna del formulario-->
             <div class="col-xl-7 col-lg-12 d-flex register-bg" >
                 
                 <div class="container align-self-center p-6">
-<<<<<<< HEAD
-                    <h1 class="font-weight-bold mb-3"><img src="assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
-=======
                     <h1 class="font-weight-bold mb-3"><img src="./assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
->>>>>>> 988ed5c216261acad12e91f7cf27351896d5d3e7
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
@@ -61,6 +52,7 @@
                             <td><i class="bi bi-key"  ></i>Contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
+                        
                         <tr>
                             <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
