@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i> &nbsp Email:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" type="email" id="correo"name="email" placeholder= "ej: gpmcheco@mail.com" required maxlength="20"></td>
+                            <td><input class="inputAlinear" type="email" id="correo"name="email" placeholder= "ej: gpmcheco@mail.com" required maxlength="50"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-key"  ></i> &nbsp Contraseña:<span class="text-danger">*</span></td>
