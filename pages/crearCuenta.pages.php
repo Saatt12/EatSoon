@@ -1,4 +1,8 @@
-    
+    <!--
+    <div class="bg-dark ">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-1" href="index.php"> Volver</a>
+    </div>
+    -->
     <section>
         
         <div class="row no-gutters bg-dark">
@@ -51,7 +55,7 @@
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-key"  ></i> Confirmar contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
                          
                         </tr>
@@ -59,11 +63,19 @@
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
                         <div class="form-group mb-2">
-                        <button type="button" id ="bottonDescartarr" class="btn btn-info mt-3 "  onclick="fntdescartarCuenta(1)" >Cancelar </button>
+                            <button type="button" id ="bottonDescartarr" class="btn btn-info mt-3 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
                     
-                            <button class="btn btn-warning mt-3"  >Crear </button>
+                            <button class="btn btn-warning mt-3 btn-setupA btn-space"  >Crear </button>
                         </div>
-                        <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->
+                        <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>
+                    
+                        <tr>
+                            <div class="form-group mb-2 ">
+                                <button class="btn btn-info mt-3 btn-setupC btn-space" id ="bottonCancelar" onclick="reset()" >Cancelar </button>
+                                <button class="btn btn-warning mt-3 btn-setupA btn-space" id="bottonAceptar" >Acceptar </button>
+                            </div>
+                        </tr>
+                    -->
                     
                     </form>
 

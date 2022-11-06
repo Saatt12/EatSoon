@@ -75,14 +75,6 @@ body {
     margin-bottom: 10px;
 }
 
-
-/*.register-bg{
-    background-image:  url("https://cdn-icons-png.flaticon.com/512/306/306232.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}*/
-
 @media (max-width: 575.98px) {
     .p-6 {
         padding: 2rem;
