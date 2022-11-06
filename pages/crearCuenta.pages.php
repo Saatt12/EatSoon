@@ -1,29 +1,26 @@
-    
+    <!--
+    <div class="bg-dark ">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-1" href="index.php"> Volver</a>
+    </div>
+    -->
     <section>
         
         <div class="row no-gutters bg-dark">
             <!--columa de la imagen-->
             <div class="col-xl-5 col-lg-12">
                 <div class=" p-7">
-<<<<<<< HEAD
+
                     <img src="assets/img/logoBurger.png" alt="IMG" width="120%">
-=======
 
-=======
-                    <img src="./assets/img/logoBurger.png" alt="IMG" width="120%">
-
->>>>>>> 988ed5c216261acad12e91f7cf27351896d5d3e7
                 </div>
             </div>
             <!--columna del formulario-->
             <div class="col-xl-7 col-lg-12 d-flex register-bg" >
                 
                 <div class="container align-self-center p-6">
-<<<<<<< HEAD
+
                     <h1 class="font-weight-bold mb-3"><img src="assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
-=======
-                    <h1 class="font-weight-bold mb-3"><img src="./assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
->>>>>>> 988ed5c216261acad12e91f7cf27351896d5d3e7
+
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
                     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
@@ -32,37 +29,37 @@
                         
                             
                         <tr>
-                            <td><i class="bi bi-person " ></i>Nombres:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-person " ></i> Nombres:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre" placeholder= "Ingrese sus nombres" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
                         
                         </tr>
                            
                         <tr>
-                            <td><i class="bi bi-person" ></i>Apellidos:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-person" ></i> Apellidos:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" id="apellido" name="apellido" placeholder= "Ingrese sus apellidos" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
                         </tr>
                         <tr class="filaTabla">
-                            <td><i class="bi bi-credit-card-2-front"></i>C.i:<span class="number-danger">*</span></td>
+                            <td><i class="bi bi-credit-card-2-front"></i> C.i:<span class="number-danger">*</span></td>
                             <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-mailbox" ></i>Dirección:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-mailbox" ></i> Dirección:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" id="direccion" name="direccion" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-phone"></i>Telefono:<span class="number-danger">*</span></td>
+                            <td><i class="bi bi-phone"></i> Telefono:<span class="number-danger">*</span></td>
                             <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="4444444" max="77777777" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-envelope"></i>Email:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-envelope"></i> Email:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="email" id="correo"name="email" placeholder= "ej: gpmcheco@mail.com" required maxlength="20"></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-key"  ></i>Contraseña:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-key"  ></i> Contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-key"  ></i>Confirmar contraseña:<span class="text-danger">*</span></td>
+                            <td><i class="bi bi-key"  ></i> Confirmar contraseña:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
                         </tr>
                     
@@ -70,9 +67,9 @@
                     </table> 
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
                         <tr>
-                            <div class="form-group mb-2">
-                                <button class="btn btn-info mt-3 btn-space" id ="bottonDescartarr" onclick="reset()" >Cancelar </button>
-                                <button class="btn btn-warning mt-3 btn-space" >Aceptar </button>
+                            <div class="form-group mb-2 ">
+                                <button class="btn btn-info mt-3 btn-setupC btn-space" id ="bottonCancelar" onclick="reset()" >Cancelar </button>
+                                <button class="btn btn-warning mt-3 btn-setupA btn-space" id="bottonAceptar" >Acceptar </button>
                             </div>
                         </tr>  
                         <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>-->

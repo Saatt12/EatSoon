@@ -1,8 +1,8 @@
-<header  class="bg-warning border-bottom">
-    <div class="navbar-header p-1">
-        <a class="btn btn-warning bi bi-arrow-left-circle-fill" href="index.php"> Volver</a>
+
+    <div class=" bg-warning">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-1" href="index.php"> Volver</a>
     </div>
-</header>
+
 <!--<div class="bg-warning">
     <button  id ="botton" class="col-12 btn btn-warning d-flex " >
         <span href="index.php" class="bi bi-arrow-left-circle-fill"> Volver </span>         
@@ -79,7 +79,7 @@
             </div> 
                                             
             <div class="mb-2">
-                <button id ="botton" class="col-12 btn btn-warning d-flex justify-content-between ">
+                <button id ="botton" class=" col-12 btn btn-warning d-flex justify-content-between ">
                     <span>Publicar </span><i id="icono" class="bi bi-check-lg "></i>
                     
                 </button>
