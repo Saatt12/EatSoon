@@ -1,12 +1,6 @@
 <?php
-    /** URL raiz del proyecto */
-
-
-
-    define('RUTA', 'http://localhost/ProyectoEatSoon\EatSoon');
-
-
-
+    /** URL raiz del proyecto */    
+    define('RUTA', 'http://localhost/ProyectoEatSoon/EatSoon');
 
     $db_config = [
         'db_user' => 'root',
