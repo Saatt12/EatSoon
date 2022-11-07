@@ -19,7 +19,7 @@
                     <h1 class="font-weight-bold mb-3"><img src="assets/img/user3.png" width="15%" /> Crear Cuenta</h1>
                     
                     <p class="text-muted mb-3">Ingrese la siguiente información para registrarte:</p>
-                    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
+                    <form id = "registroCuenta" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="form-horizontal" style="margin:0 auto" >                        
                      
                      <table class="formularioTabla">
                         
@@ -40,26 +40,31 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i> &nbsp Dirección:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="direccion" name="direccion" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="50" ></td>
+                            <td><input class="inputAlinear" id="direccion" name="direccion" placeholder= "Ingrese dirección" required minlength ="10" maxlength ="70" ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i> &nbsp Telefono:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="4444444" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
+                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="44444444" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i> &nbsp Email:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="email" id="correo"name="email" placeholder= "ej: gpmcheco@mail.com" required maxlength="50"></td>
                         </tr>
                         <tr>
-                            <td><i class="bi bi-key"  ></i> &nbsp Contraseña:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" type="password" id="password"name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15"></td>
+                            <td><i class="bi bi-key"  ></i> &nbsp Contraseña:<span class="text-danger">*</span></td> 
+                            <td> <input class="inputAlinear" type="password" id="password" name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15" ><input id="ocultarpass" type="checkbox"  style="display:none;" onclick="mostrarContrasena()"> <label for="ocultarpass" class="far fa-eye" id="togglePassword">  </label> </td>
+
                         </tr>
+
                         <tr>
                             <td><i class="bi bi-key"  ></i> Confirmar contraseña:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" type="password" id="Cpassword"name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"></td>
+                            <td><input class="inputAlinear" type="password" id="Cpassword" name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"> <input id="ocultarpassRepe" type="checkbox"  style="display:none;" onclick="mostrarContrasenaConfi()"><label for="ocultarpassRepe" class="far fa-eye" id="togglePassword"> </label>   </td>
                          
+
                         </tr>
+                        
                     </table>
+                    
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
                         <div class="form-group mb-2">
