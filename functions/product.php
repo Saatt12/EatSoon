@@ -1,15 +1,37 @@
 <?php
 
+    $cant = 0;
     function existProduct($con, $product){
         $query = $con->prepare("SELECT * FROM producto WHERE nombre_producto = '$product' LIMIT 1");
         $query->execute();
         return count($query->fetchAll()) > 0;
     }
 
-    function getProducts($con){
-        $query = $con->prepare('SELECT * FROM producto WHERE fecha_publicacion ORDER BY fecha_publicacion desc');
+    /*function getProducts($con){
+        $cantPagina = 8;
+        
+        $query = $con->prepare("SELECT * FROM producto WHERE fecha_publicacion ORDER BY fecha_publicacion desc LIMIT 0,$cantPagina ");
         $query->execute();
+        $aux = $query->rowCount();
+        $page = $aux/$cantPagina;
+        $page = ceil($page);
+        $GLOBALS['cant'] = $page;
         return $query->fetchAll();
+        
+    }*/
+
+
+function getProductoPage($con,$actual,$limite){
+        $cantPagina = 8;
+        
+        $query = $con->prepare("SELECT * FROM producto WHERE fecha_publicacion ORDER BY fecha_publicacion desc LIMIT $actual,$limite ");
+        $query->execute();
+        $aux = $query->rowCount();
+        $page = $aux/$cantPagina;
+        $page = ceil($page);
+        $GLOBALS['cant'] = $page;
+        return $query->fetchAll();
+        
     }
 
     function createProduct($con, $data, $folder_save, $uploadFile){

@@ -20,6 +20,7 @@ swal({
         document.getElementById('registroProducto').reset();
         document.getElementById("imagen").value = "";
         registroProducto.reset();
+
   
         swal("Se cancelo el registro con exito!!!", {
           icon: "success",
@@ -29,4 +30,8 @@ swal({
       }
     });
   
+
+
+
   }
+ 

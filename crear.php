@@ -15,10 +15,16 @@
             'direccion' => $_POST['direccion'],
             'telefono' => $_POST['telefono'],
             'email' => $_POST['email'],
-            'password' => $_POST['password']
-        ];
+            'password' => $_POST['password'],
+            'Cpassword' => $_POST['Cpassword']
 
-    $create = createUser($con, $data);
+        ];
+        if($data['password']==$data['Cpassword']){
+            $create = createUser($con, $data);
+        }else{
+            //para mostrar mensaje no crear cuenta
+        }
+    
 
     if(!$create){
          echo "El producto ingresado ya existe";
@@ -30,6 +36,7 @@
     $title = "Creacion de Cuenta"; // Nombre del title
 
     $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
-    require './templates/home.template.php'; // Require template
+    $img = '.img';
+    require './templates/extra.template.php'; // Require template
 
 ?>

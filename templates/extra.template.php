@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styles.css">
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styleRP.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     
 
     <title><?=$title?></title>
@@ -27,7 +28,6 @@
     </script>
 </head>
 <body>
-
 <header class="header">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
@@ -56,10 +56,10 @@
                             <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
                             <a href="/" id="nav-iniciar">Inicia Sesion</a>
                         </li>
-                        <li class="menu-item">
+                        <!-- <li class="menu-item">
                             <i class="bi-box-arrow-in-right" style="font-size: 1.5rem; color: white;"></i>
                             <a href="crear.php" id="nav-crear">Crear cuenta</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </nav>
             </div>
@@ -73,7 +73,7 @@
 <script src="<?=RUTA?>/assets/js/paginacion.js"></script>        
 <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="<?=RUTA?>/assets/js/Alerts.js"></script>  <!--Conecta el js-->
+<script src="<?=RUTA?>/assets/js/Alerts3.js"></script>  <!--Conecta el js-->
 <script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
 </body>
 </html>

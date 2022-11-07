@@ -51,6 +51,7 @@ body {
     background-color: transparent;
 }
 
+
 .form-control {
     /*background-color: var(--color-dark--xx);*/
     border: 2px solid var(--color-dark--xx);
@@ -98,4 +99,6 @@ body {
     .register-bg {
         min-height: 50vh;
     }
+
+
 }

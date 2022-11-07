@@ -293,5 +293,20 @@ li.menu-item a:hover {
     .barra__container p {
         font-size: 5px;
     }
-
 }
+    
+/*botones de crearCuenta*/
+.btn-setupA {
+    color: #ffffff;
+    background-color: #daa520 ;
+    
+}
+.btn-setupC {
+    color: #ffffff;
+    
+}   
+.btn-space {
+    margin-right: 50px;
+    margin-left: 50px;
+   
+  }
