@@ -30,7 +30,7 @@
          echo "El producto ingresado ya existe";
     }
 
-        header('Location: crearjjjjj.php');
+        header('Location: crear.php');
     }
         
     $title = "Creacion de Cuenta"; // Nombre del title
