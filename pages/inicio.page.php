@@ -46,7 +46,13 @@
         </div>
 
         <div class="wrap column-4 columns">
-            <?php foreach($productos as $producto): ?>
+        <?php 
+            //$cantProducto = $productos->num_rows;
+        ?>
+            <?php foreach($productos as $producto): 
+                //for($i=0;$i<2;$i++){
+                ?>
+                
                 <div class="tarjeta-rest" style="background: url(<?php echo RUTA . '/storage/' . $producto['imagen']?>) center; background-size: cover;">
                     <div class="wrap-text_tarjeta-rest">
                         <h2><?php echo $producto['nombre_producto'];?></h2>
@@ -69,9 +75,7 @@
                                 background-color: goldenrod;
                                 color: white;
                                 font-weight: bold;
-                                text-align: center;">Añadir al carrito </button>
-
-                                <utton type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="padding: .25rem 1rem;
+                                text-align: center;"> Añadir Carrito<button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto'];?>" style="padding: .25rem 1rem;
                                 border-radius: 4px;                              background-color: goldenrod;
                                 color: white;
                                 font-weight: bold;
@@ -112,23 +116,26 @@
                         </div>
                     </div>
                 </div>
-            <?php endforeach; ?>
+            <?php 
+               // }
+                endforeach; ?>
         </div>
         
         <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center pt-4">
+            <ul class="pagination justify-content-center pt-4 m-0">
                 <li class="page-item">
-                    <a class="page-link " href="#" aria-label="Previous" id="pag-anterior">
+                    <a class="page-link " href="?page=<?php echo $pagina-1?>" aria-label="Previous" id="pag-anterior">
                         <span aria-hidden="true">&laquo;</span>
                     </a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#" id="pag-uno">1</a></li>
-                <li class="page-item"><a class="page-link" href="#" id="pag-dos">2</a></li>
-                <li class="page-item"><a class="page-link" href="#" id="pag-tres">3</a></li>
-                <li class="page-item"><a class="page-link" href="#" id="pag-cuatro">4</a></li>
-                <li class="page-item"><a class="page-link" href="#" id="pag-cinco">5</a></li>
-                <li class="page-item">
-                <a class="page-link " href="#" aria-label="Next" id="pag-siguiente">
+                
+                <?php for($i=1;$i<=5;$i++){?>  
+                    <li class="page-item"><a class="page-link" href="?page=<?php echo $i?>" id="pag-uno"><?php echo $i?></a></li>
+                    <?php }?>
+           
+
+
+                <a class="page-link " href="?page=<?php echo $pagina+1?>" aria-label="Next" id="pag-siguiente">
                     <span aria-hidden="true">&raquo;</span>
                 </a>
                 </li>
@@ -138,6 +145,6 @@
     </div>
     
 </main>
-<!-- <footer>
-    <div style="background-color:red; height: 17.7vh;"></div>
-</footer> -->
+ <footer class = "bg-dark">
+    <div style="height: 6vh;"></div>
+</footer> 
