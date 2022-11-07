@@ -1,12 +1,12 @@
-swal({
-    title: "Registra tu produssssssssssssssssssssssssscto!",
+ swal({
+     title: "Crea tu Cuenta!!!",
     text: "No te olvides llenar todos lo campos!!!",
     icon: "info",
-    button: "Aceptar!",
+     button: "Aceptar!",
   
-  });
+   });
   
-  function fntdescartar(id){
+  function fntdescartarCuenta(id){
     buttons: ["Cancelar", "Aceptar"],
     swal({
       title: "Estas seguro?",
@@ -17,9 +17,11 @@ swal({
     })
     .then((willDelete) => {
       if (willDelete) {
-        document.getElementById('registroProducto').reset();
-        document.getElementById("imagen").value = "";
-        registroProducto.reset();
+        document.getElementById('registroCuenta').reset();
+
+        
+        registroCuenta.reset();
+        
   
         swal("Se cancelo el registro con exito!!!", {
           icon: "success",
@@ -30,3 +32,22 @@ swal({
     });
   
   }
+
+  function mostrarContrasena() {
+    var temp = document.getElementById("password");
+    if (temp.type === "password") {
+        temp.type = "text";
+    }
+    else {
+        temp.type = "password";
+    }
+}
+function mostrarContrasenaConfi() {
+  var temp = document.getElementById("Cpassword");
+  if (temp.type === "password") {
+      temp.type = "text";
+  }
+  else {
+      temp.type = "password";
+  }
+}
