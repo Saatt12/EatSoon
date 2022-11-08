@@ -10,22 +10,7 @@
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styles.css">
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styleRP.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    
 
-    <title><?=$title?></title>
-    <script type="text/javascript">  
-        $(document).ready(function () {
-        (function($) {
-            $('#buscador').keyup(function () {
-                    var ValorBusqueda = new RegExp($(this).val(), 'i');
-                    $('.wrap .tarjeta-rest').hide();
-                    $('.wrap .tarjeta-rest').filter(function () {
-                        return ValorBusqueda.test($(this).text());
-                    }).show();
-                        })
-            }(jQuery));
-        });
-    </script>
 </head>
 <body>
 <header class="header">
