@@ -37,6 +37,6 @@
 
     $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
     $img = '.img';
-    require './templates/home.template.php'; // Require template
+    require './templates/extra.template.php'; // Require template
 
 ?>

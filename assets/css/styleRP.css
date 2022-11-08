@@ -50,9 +50,7 @@ body {
     border: 2px solid var(--color-dark--xx);
     background-color: transparent;
 }
-.form-control.error small{
-    visibility: visible;
-}
+
 
 .form-control {
     /*background-color: var(--color-dark--xx);*/
@@ -75,6 +73,14 @@ body {
     margin-bottom: 10px;
 }
 
+
+/*.register-bg{
+    background-image:  url("https://cdn-icons-png.flaticon.com/512/306/306232.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}*/
+
 @media (max-width: 575.98px) {
     .p-6 {
         padding: 2rem;
@@ -93,4 +99,6 @@ body {
     .register-bg {
         min-height: 50vh;
     }
+
+
 }

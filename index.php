@@ -14,7 +14,7 @@
     deleteExpireds($con, $folder_save); //eliminar productos expirados
 
     $productos = getProducts($con);
-        
+    
 
     $title = "Inicio Pagina"; // Nombre del title
 

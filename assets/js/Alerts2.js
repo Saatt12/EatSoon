@@ -18,36 +18,9 @@ swal({
     .then((willDelete) => {
       if (willDelete) {
         document.getElementById('registroProducto').reset();
-        document.getElementById('registrarCuenta').reset();
         document.getElementById("imagen").value = "";
         registroProducto.reset();
-        registrarCuenta.reset();
-  
-        swal("Se cancelo el registro con exito!!!", {
-          icon: "success",
-        });
-      } else {
-        swal("No se realizo nada!");
-      }
-    });
-  
-  }
-  function fntdescartarCuenta(id){
-    buttons: ["Cancelar", "Aceptaaaaaar"],
-    swal({
-      title: "Estas seguro?",
-      text: "Se cancelara el registro del producto!",
-      icon: "warning",
-      buttons: ["Cancelar", "Aceptar"],
-      dangerMode: true,
-    })
-    .then((willDelete) => {
-      if (willDelete) {
-        document.getElementById('registrarCuenta').reset();
 
-        
-        registrarCuenta.reset();
-        
   
         swal("Se cancelo el registro con exito!!!", {
           icon: "success",
@@ -57,4 +30,8 @@ swal({
       }
     });
   
+
+
+
   }
+ 
