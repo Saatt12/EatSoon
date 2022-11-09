@@ -26,17 +26,22 @@
                             
                         <tr>
                             <td><i class="bi bi-person " ></i> &nbsp Nombres:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre" placeholder= "Ingrese sus nombres" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
+                            <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre"
+                             placeholder= "Ingrese sus nombres" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
                         
                         </tr>
                            
                         <tr>
                             <td><i class="bi bi-person" ></i> &nbsp Apellidos:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="apellido" name="apellido" placeholder= "Ingrese sus apellidos" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
+                            <td><input class="inputAlinear" id="apellido" name="apellido" 
+                            placeholder= "Ingrese sus apellidos" oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required minlength ="3" maxlength ="15" ></td>
                         </tr>
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i> &nbsp C.i:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="ci" name="ci" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
+                            <td><input class="inputAlinear" type="number" id="ci" name="ci"  
+                            oninput="this.value = this.value.replace(/[^0-9]/,'')"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  
+                            placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i> &nbsp Dirección:<span class="text-danger">*</span></td>
@@ -44,21 +49,33 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i> &nbsp Telefono:<span class="number-danger">*</span></td>
-                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de telefono"   required  min="44444444" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
-                        </tr>
+                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number"   pattern="[0-9]"
+                            placeholder= "Ingrese número de telefono"    min="44444444" max="79999999"  minlength ="7" maxlength ="8" required 
+                            oninput="this.value = this.value.replace(/[^0-9]/,'')"
+                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" 
+                            onkeyup="this.value=Numeros(this.value)"
+                            
+                            ></td>
+                            </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i> &nbsp Email:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" type="email" id="correo"name="email" placeholder= "ej: gpmcheco@mail.com" required maxlength="50"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-key"  ></i> &nbsp Contraseña:<span class="text-danger">*</span></td> 
-                            <td> <input class="inputAlinear" type="password" id="password" name="password" placeholder= "Ingrese contraseña" required minlength="6" maxlength="15" ><input id="ocultarpass" type="checkbox"  style="display:none;" onclick="mostrarContrasena()"> <label for="ocultarpass" class="far fa-eye" id="togglePassword">  </label> </td>
+                            <td> <input class="inputAlinear" type="password" id="password" name="password" 
+                            placeholder= "Ingrese contraseña" required minlength="6" maxlength="15" >
+                            <input id="ocultarpass" type="checkbox"  style="display:none;" onclick="mostrarContrasena()">
+                             <label for="ocultarpass" class="far fa-eye" id="togglePassword">  </label> </td>
 
                         </tr>
 
                         <tr>
                             <td><i class="bi bi-key"  ></i> Confirmar contraseña:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" type="password" id="Cpassword" name="Cpassword" placeholder= "Repita contraseña" required minlength="6" maxlength="15"> <input id="ocultarpassRepe" type="checkbox"  style="display:none;" onclick="mostrarContrasenaConfi()"><label for="ocultarpassRepe" class="far fa-eye" id="togglePassword"> </label>   </td>
+                            <td><input class="inputAlinear" type="password" id="Cpassword" name="Cpassword" 
+                            placeholder= "Repita contraseña" required minlength="6" maxlength="15">
+                             <input id="ocultarpassRepe" type="checkbox"  style="display:none;" onclick="mostrarContrasenaConfi()">
+                             <label for="ocultarpassRepe" class="far fa-eye" id="togglePassword"> </label>   </td>
                          
 
                         </tr>
