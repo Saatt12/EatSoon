@@ -27,20 +27,20 @@
                         <tr>
                             <td><i class="bi bi-person " ></i> &nbsp Nombres:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre" placeholder= "Ingrese sus nombres" 
-                            oninput="this.value = this.value.replace(/[^a-z A-Z ñ-Ñ]/,'')" required minlength ="3" maxlength ="15" ></td>
+                            oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ]/g,'')" required minlength ="3" maxlength ="15" ></td>
                         
                         </tr>
                            
                         <tr>
                             <td><i class="bi bi-person" ></i> &nbsp Apellidos:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="apellido" name="apellido" placeholder= "Ingrese sus apellidos" 
-                            oninput="this.value = this.value.replace(/[^a-z A-Z ñ-Ñ]/,'')" required minlength ="3" maxlength ="15" ></td>
+                            <td><input type="text" class="inputAlinear" id="apellido" name="apellido" placeholder= "Ingrese sus apellidos" 
+                            oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ]/g,'')"  minlength ="3" maxlength ="15" required></td>
                         </tr>
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i> &nbsp C.i:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" id="ci" name="ci" type="number" 
                             oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); this.value = this.value.replace(/[^0-9]/,'')"  
-                            placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="10" min="1111111" max="9999999999"  required   ></td>
+                            placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="8" min="1111111" max="99999999"  required   ></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-mailbox" ></i> &nbsp Dirección:<span class="text-danger">*</span></td>
