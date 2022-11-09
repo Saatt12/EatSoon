@@ -59,6 +59,11 @@ function mostrarContrasenaConfi() {
   }
 }
 
+
+function showMessage(){
+  swal("click here");
+ }
+
 // function Numeros(string){//Solo numeros
 //   var out = '';
 //   var filtro = '1234567890';//Caracteres validos

@@ -44,7 +44,7 @@
                         </tr>
                         <tr>
                             <td><i class="bi bi-phone"></i> &nbsp Teléfono:<span class="text-danger">*</span></td>
-                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de teléfono"   required  min="44444444" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
+                            <td><input class="inputAlinear" id="telefono" name="telefono" type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"  placeholder= "Ingrese número de teléfono"   required  min="4000000" max="79999999" pattern="^[0-9]+"  minlength ="7" maxlength ="8"></td>
                         </tr>
                         <tr>
                             <td><i class="bi bi-envelope"></i> &nbsp Email:<span class="text-danger">*</span></td>
@@ -76,7 +76,8 @@
                         <div class="form-group mb-2">
                             <button type="button" id ="bottonDescartarr" class="btn btn-info mt-3 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
                     
-                            <button class="btn btn-warning mt-3 btn-setupA btn-space"  >Aceptar </button>
+                            <button  class="btn btn-warning mt-3 btn-setupA btn-space">Aceptar </button>
+                            
                         </div>
                         <!--<small class="d-inline-block text-muted mt-3">Gracias y Bienvenido a Eat-Soon!!! </small>
                     
