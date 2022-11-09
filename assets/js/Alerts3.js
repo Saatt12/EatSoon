@@ -7,12 +7,12 @@
    });
   
   function fntdescartarCuenta(id){
-    buttons: ["Cancelar", "Aceptar"],
+
     swal({
       title: "Estas seguro?",
-      text: "Se cancelara el registro del producto!",
+      text: "Se cancelara el registro de tu Cuenta!",
       icon: "warning",
-      buttons: ["Cancelar", "Aceptar"],
+      buttons: ["No", "Si"],
       dangerMode: true,
     })
     .then((willDelete) => {
@@ -59,10 +59,6 @@ function mostrarContrasenaConfi() {
   }
 }
 
-
-function showMessage(){
-  swal("click here");
- }
 
 // function Numeros(string){//Solo numeros
 //   var out = '';

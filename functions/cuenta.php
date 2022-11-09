@@ -19,11 +19,11 @@
                 ':pass' => $data['password']
             ]);
 
-
+// Para direccionar automaticamente al inicio despues de crear una cuenta
           header("Location: index.php");
               die();
 
-              
+
             return true;
     }
 
