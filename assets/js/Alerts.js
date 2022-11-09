@@ -17,6 +17,8 @@ swal({
   title: "Bienvenido a EatSoon!",
   text: "Disfruta!!!",
   icon: "success",
+  closeOnClickOutside: false,
+  timer: 5000,
   button: "Continuar!",
 
 });

@@ -1,7 +1,9 @@
  swal({
-     title: "Crea tu Cuenta!!!",
+     title: "Crea tu Cuenta!",
     text: "No te olvides llenar todos lo campos!!!",
     icon: "info",
+    closeOnClickOutside: false,
+    timer: 5000,
      button: "Aceptar!",
   
    });
@@ -12,6 +14,7 @@
       title: "Estas seguro?",
       text: "Se cancelara el registro de tu Cuenta!",
       icon: "warning",
+      closeOnClickOutside: false,
       buttons: ["No", "Si"],
       dangerMode: true,
     })
@@ -24,11 +27,13 @@
         
   
         swal("Se cancelo el registro con exito!!!", {
+          closeOnClickOutside: false,
           icon: "success",
         });
 
       } else {
         swal("No se realizo nada...", {
+          closeOnClickOutside: false,
           icon: "info",
         });
 
