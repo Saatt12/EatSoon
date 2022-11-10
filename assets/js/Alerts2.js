@@ -2,6 +2,8 @@ swal({
     title: "Registra tu producto!",
     text: "No te olvides llenar todos lo campos!!!",
     icon: "info",
+    closeOnClickOutside: false,
+    timer: 5000,
     button: "Aceptar!",
   
   });
@@ -12,6 +14,8 @@ swal({
       title: "Estas seguro?",
       text: "Se cancelara el registro del producto!",
       icon: "warning",
+      closeOnClickOutside: false,
+
       buttons: ["Cancelar", "Aceptar"],
       dangerMode: true,
     })
@@ -23,10 +27,16 @@ swal({
 
   
         swal("Se cancelo el registro con exito!!!", {
+          closeOnClickOutside: false,
+
           icon: "success",
         });
       } else {
-        swal("No se realizo nada!");
+        swal("No se realizó nada...", {
+          closeOnClickOutside: false,
+
+          icon: "info",
+        });
       }
     });
   

@@ -1,3 +1,18 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script type="text/javascript">  
+        $(document).ready(function () {
+        (function($) {
+            $('#buscador').keyup(function () {
+                    var ValorBusqueda = new RegExp($(this).val(), 'i');
+                    $('.wrap .tarjeta-rest').hide();
+                    $('.wrap .tarjeta-rest').filter(function () {
+                        return ValorBusqueda.test($(this).text());
+                    }).show();
+                        })
+            }(jQuery));
+        });
+    </script> 
 <main>
     <div class="hero">
         <div class="container ">
