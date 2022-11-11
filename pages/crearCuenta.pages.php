@@ -3,6 +3,11 @@
         <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-1" href="index.php"> Volver</a>
     </div>
     -->
+    <div class=" bg-dark">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-2.5 btn-setupA" href="index.php"> &nbsp Volver</a>
+
+
+    </div>
     <section>
         
         <div class="row no-gutters bg-dark">
