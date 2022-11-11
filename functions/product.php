@@ -19,7 +19,7 @@
     function getCantPaginas($con, $actual, $limite){
         
         
-        $query = $con->query("SELECT FOUND_ROWS() AS cantidad");
+        $query = $con->query("SELECT FOUND_ROWS() AS cantidad ");
         $cantidad = $query->fetch()['cantidad'];
         return ceil($cantidad/$limite);
         
