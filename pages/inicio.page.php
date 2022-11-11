@@ -110,12 +110,12 @@
                                                 if($aux != null)
                                                     echo $producto['desc_producto'];
                                                 else
-                                                    echo "El producto no tiene informacion adicional";
+                                                    echo "El producto no tiene información adicional";
                                              ?></span>    
                                              <p> </p>
-                                             <span><span style="text-transform:uppercase; color:goldenrod;">publicacion:  </span><?php echo $producto['fecha_publicacion'];?></span>
+                                             <span><span style="color:goldenrod;">Publicación:  </span><?php echo $producto['fecha_publicacion'];?></span>
                                              <p> </p>
-                                             <span><span style="text-transform:uppercase; color:goldenrod;">vencimiento:  </span><?php echo $producto['fecha_caducidad'];?></span>                                    
+                                             <span><span style=" color:goldenrod;">Vencimiento:  </span><?php echo $producto['fecha_caducidad'];?></span>                                    
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-warning link-light" data-bs-dismiss="modal" style="padding: .25rem 1rem;
@@ -139,21 +139,28 @@
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center pt-4 m-0">
                 <li class="page-item">
-                    <a class="page-link " href="?page=<?php echo $pagina-1?>" aria-label="Previous" id="pag-anterior">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
+                    <?php //if($pagina>1):?>
+                        <a class="page-link " href="index.php?page=<?php echo $pagina-1?>" aria-label="Previous" id="pag-anterior">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    <?php //endif;?>    
                 </li>
                 
-                <?php for($i=1;$i<=5;$i++){?>  
-                    <li class="page-item"><a class="page-link" href="?page=<?php echo $i?>" id="pag-uno"><?php echo $i?></a></li>
-                    <?php }?>
-           
+                
+                <?php for($i=1;$i<=$numPaginas;$i++):?> 
+                    <?php if($i<=5):?>
+                        <li class="page-item"><a class="page-link" href="index.php?page=<?php echo $i?>" id="pag-uno"><?php echo $i?></a></li>
+                    <?php endif;?>
+                <?php endfor;?>
+                 
+                    
 
-
-                <a class="page-link " href="?page=<?php echo $pagina+1?>" aria-label="Next" id="pag-siguiente">
-                    <span aria-hidden="true">&raquo;</span>
-                </a>
-                </li>
+                <?php  //if($pagina<$numPaginas):?>
+                    <li class="page-item"><a class="page-link " href="index.php?page=<?php echo $pagina+1?>" aria-label="Next" id="pag-siguiente">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a></li>
+                <?php //endif;?>   
+                
             </ul>
         </nav>
         

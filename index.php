@@ -21,14 +21,20 @@
     }
     $actual;
     if($pagina > 1){
-        $actual = ($pagina-1)*$proPage;
+        // $actual = ($pagina-1)*$proPage;
+        $actual = ($pagina * $proPage)-$proPage;
     }else{
         $actual = 0;
     }
 
+
     //$productos = getProducts($con);
+    //limitarProductos($con); 
     $productos = getProductoPage($con,$actual,$proPage);
-   
+    redireccionar($productos,RUTA);
+    $numPaginas = getCantPaginas($con,$actual,$proPage);
+
+    
 
     $title = "Inicio Pagina"; // Nombre del title
 
