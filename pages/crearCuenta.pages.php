@@ -85,7 +85,7 @@
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
                         <div class="form-group mb-2">
-                            <button type="button" id ="bottonDescartarr" class="btn btn-info mt-3 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
+                            <button type="button" id ="bottonDescartarr" class="btn btn-info mt-2 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
                     
                             <button  class="btn btn-warning mt-3 btn-setupA btn-space">Aceptar </button>
                             
