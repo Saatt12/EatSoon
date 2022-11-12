@@ -65,6 +65,18 @@ function mostrarContrasenaConfi() {
 }
 
 
+function mensajeexito(id) {
+  swal({
+    title: "Tu cuenta se creó con éxito!!!",
+   text: "Felicidades, disfruta EatSoon!!!",
+   icon: "success",
+   closeOnClickOutside: false,
+   timer: 5000,
+    button: "Aceptar!",
+ 
+  });
+}
+
 // function Numeros(string){//Solo numeros
 //   var out = '';
 //   var filtro = '1234567890';//Caracteres validos
