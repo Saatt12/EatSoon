@@ -65,13 +65,13 @@ function mostrarContrasenaConfi() {
 }
 
 
-function mensajeexito(id) {
+function mensajecontrarepetida(id) {
   swal({
-    title: "Tu cuenta se creó con éxito!!!",
-   text: "Felicidades, disfruta EatSoon!!!",
-   icon: "success",
+    title: "Las contraseñas no son iguales!!!",
+   text: "Por favor verfica las contraseñas introducidas...",
+   icon: "info",
    closeOnClickOutside: false,
-   timer: 5000,
+   timer: 10000,
     button: "Aceptar!",
  
   });
