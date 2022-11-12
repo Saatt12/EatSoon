@@ -3,6 +3,11 @@
         <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-1" href="index.php"> Volver</a>
     </div>
     -->
+    <div class=" bg-dark">
+        <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-2.5 btn-setupA" href="index.php"> &nbsp Volver</a>
+
+
+    </div>
     <section>
         
         <div class="row no-gutters bg-dark">
@@ -80,7 +85,7 @@
                         <p class="text-muted mb-1">(*)campos obligatorios</p>
 
                         <div class="form-group mb-2">
-                            <button type="button" id ="bottonDescartarr" class="btn btn-info mt-3 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
+                            <button type="button" id ="bottonDescartarr" class="btn btn-info mt-2 btn-setupC btn-space"  onclick="fntdescartarCuenta(1)" >Cancelar </button>
                     
                             <button  class="btn btn-warning mt-3 btn-setupA btn-space">Aceptar </button>
                             
