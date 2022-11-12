@@ -21,8 +21,9 @@
         ];
         if($data['password']==$data['Cpassword']){
             $create = createUser($con, $data);
+
         }else{
-            //para mostrar mensaje no crear cuenta
+            //para mostrar mensaje no crear cuenta 
         }
     
 
