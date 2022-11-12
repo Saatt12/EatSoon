@@ -44,7 +44,7 @@
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i> &nbsp C.i:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" id="ci" name="ci" type="number" 
-                            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength); this.value = this.value.replace(/[^0-9]/,'')"  
+                            oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(1, this.maxLength); this.value = this.value.replace(/[^0-9]/,'')"  
                             placeholder= "Ingrese C.I." pattern="^[0-9]+"  minlength ="7" maxlength ="8" min="1111111" max="99999999"  required   ></td>
                         </tr>
                         <tr>

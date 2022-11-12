@@ -23,7 +23,7 @@
             $create = createUser($con, $data);
 
         }else{
-            //para mostrar mensaje no crear cuenta 
+            //para mostrar mensaje no crear cuenta
         }
     
 
@@ -39,5 +39,6 @@
     $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
     $img = '.img';
     require './templates/extra.template.php'; // Require template
-
+    require './assets/js/Alerts3';
 ?>
+<script src="<?=RUTA?>/assets/js/Alerts3.js"></script>  <!--Conecta el js-->
