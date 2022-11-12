@@ -28,7 +28,7 @@
     </script>
 </head>
 <body>
-<header class="header">
+<!-- <header class="header">
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <div class="container-logo d-flex justify-content-start align-items-center">
@@ -56,16 +56,16 @@
                             <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
                             <a href="/" id="nav-iniciar">Inicia Sesion</a>
                         </li>
-                        <!-- <li class="menu-item">
+                         <li class="menu-item">
                             <i class="bi-box-arrow-in-right" style="font-size: 1.5rem; color: white;"></i>
                             <a href="crear.php" id="nav-crear">Crear cuenta</a>
-                        </li> -->
+                        </li> 
                     </ul>
                 </nav>
             </div>
         </div>
     </nav>
-</header>
+</header> -->
 
         <?php require $page; ?>
 

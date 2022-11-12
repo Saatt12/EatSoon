@@ -11,7 +11,7 @@ swal({
   function fntdescartar(id){
     buttons: ["Cancelar", "Aceptar"],
     swal({
-      title: "Estas seguro?",
+      title: "¿Estas seguro?",
       text: "Se cancelara el registro del producto!",
       icon: "warning",
       closeOnClickOutside: false,
@@ -26,7 +26,7 @@ swal({
         registroProducto.reset();
 
   
-        swal("Se cancelo el registro con exito!!!", {
+        swal("Se canceló el registro con éxito!!!", {
           closeOnClickOutside: false,
 
           icon: "success",

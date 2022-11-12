@@ -26,7 +26,7 @@
         registroCuenta.reset();
         
   
-        swal("Se cancelo el registro con exito!!!", {
+        swal("Se canceló el registro con éxito!!!", {
           closeOnClickOutside: false,
           icon: "success",
         });
