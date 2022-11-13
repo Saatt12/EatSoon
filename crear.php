@@ -1,3 +1,4 @@
+
 <?php
 
     require './config/env.php';
@@ -24,13 +25,19 @@
 
         }else{
             //para mostrar mensaje no crear cuenta
+          
+            echo "<script type='text/javascript'>";
+            echo "mensajeexito(1)"; 
+            echo "</script> ";
+          
         }
     
 
     if(!$create){
-         echo "El producto ingresado ya existe";
+         echo "La cuenta ingresado ya existe";
+         
     }
-
+   
         header('Location: crear.php');
     }
         
@@ -41,4 +48,3 @@
     require './templates/extra.template.php'; // Require template
     require './assets/js/Alerts3';
 ?>
-<script src="<?=RUTA?>/assets/js/Alerts3.js"></script>  <!--Conecta el js-->

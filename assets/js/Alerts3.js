@@ -11,8 +11,8 @@
   function fntdescartarCuenta(id){
 
     swal({
-      title: "Estas seguro?",
-      text: "Se cancelara el registro de tu Cuenta!",
+      title: "¿Estás seguro?",
+      text: "Se cancelará el registro de tu Cuenta!",
       icon: "warning",
       closeOnClickOutside: false,
       buttons: ["No", "Si"],
@@ -65,13 +65,13 @@ function mostrarContrasenaConfi() {
 }
 
 
-function mensajeexito(id) {
+function mensajecontrarepetida(id) {
   swal({
-    title: "Tu cuenta se creó con éxito!!!",
-   text: "Felicidades, disfruta EatSoon!!!",
-   icon: "success",
+    title: "Las contraseñas no son iguales!!!",
+   text: "Por favor verfica las contraseñas introducidas...",
+   icon: "info",
    closeOnClickOutside: false,
-   timer: 5000,
+   timer: 10000,
     button: "Aceptar!",
  
   });
