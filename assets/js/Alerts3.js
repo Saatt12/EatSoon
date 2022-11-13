@@ -11,7 +11,7 @@
   function fntdescartarCuenta(id){
 
     swal({
-      title: "Estás seguro?",
+      title: "¿Estás seguro?",
       text: "Se cancelará el registro de tu Cuenta!",
       icon: "warning",
       closeOnClickOutside: false,
