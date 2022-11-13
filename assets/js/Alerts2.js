@@ -1,5 +1,5 @@
 swal({
-    title: "Registra tu producto!",
+    title: "Registra tu producto!!!",
     text: "No te olvides llenar todos lo campos!!!",
     icon: "info",
     closeOnClickOutside: false,
@@ -11,8 +11,8 @@ swal({
   function fntdescartar(id){
     buttons: ["Cancelar", "Aceptar"],
     swal({
-      title: "¿Estas seguro?",
-      text: "Se cancelara el registro del producto!",
+      title: "¿Estás seguro?",
+      text: "Se cancelará el registro del producto!",
       icon: "warning",
       closeOnClickOutside: false,
 
