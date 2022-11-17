@@ -22,9 +22,13 @@
         ];
         if($data['password']==$data['Cpassword']){
             $create = createUser($con, $data);
+
         }else{
             //para mostrar mensaje no crear cuenta
-           
+          
+            echo "<script type='text/javascript'>";
+            echo "mensajeexito(1)"; 
+            echo "</script> ";
           
         }
     
