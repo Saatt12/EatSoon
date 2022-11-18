@@ -2,12 +2,12 @@
 <body>
     <div class="Caja">
    <form action="" method="post">
-   <h1 class="animate__animated animate__backInLeft">Sistema de login</h1>
-   <p class="blanco">   Usuario 
+   <h1 class="animate__animated animate__backInLeft">Inicia Sesión</h1>
+   <p class="blanco">   Usuario: 
       <input type="text" name="usuario" placeholder="ingrese su nombre" placeholder= "Ingrese sus nombres" 
           oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ ]/g,'')" required minlength ="3" maxlength ="15" ></p>
 
-   <p class="blanco">   Contraseña
+   <p class="blanco">   Contraseña:
          <input id="ocultarpass" type="checkbox"  style="display:none;" onclick="mostrarContrasena()">
               <label for="ocultarpass" class="fa fa-eye" id="togglePassword">  </label>
 

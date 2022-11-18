@@ -49,6 +49,7 @@ input {
  color: white;
  text-align: center;
 }
+
 body{
 	background-image:url(../img/fondologin.jpg);
 	width: 100%;
@@ -82,30 +83,7 @@ h6 {
     margin-bottom: 30px;
     line-height: 20px;
 }
-header{
-    width: 100%;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: space-between;
-    background-color: rgba(0, 0, 0,.3);
-}
-header h1{
-    margin-left: 5px;
-    align-items: center;
-    width: calc(20% - 100px);
-    font-family: montez;
-    font-size: 55px;
-}
-header a{
-    margin-right: 30px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    transition: all ease 300ms;
-}
+
 .login-box{
 	background-image:url(../img/fondologin.jpg);
 	width: 100px;

@@ -36,6 +36,6 @@
     $title = "Registrar Producto"; // Nombre del title
 
     $page = './pages/registro.page.php';  // Nombre y ruta de la pagina
-    require './templates/simple.template.php'; // Require template
+    require './templates/registrarP.template.php'; // Require template
 
 ?>

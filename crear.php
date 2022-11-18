@@ -45,6 +45,6 @@
 
         $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
         $img = '.img';
-        require './templates/extra.template.php'; // Require template
+        require './templates/crearC.template.php'; // Require template
         require './assets/js/Alerts3';
 ?>
