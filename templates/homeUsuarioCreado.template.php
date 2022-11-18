@@ -47,18 +47,18 @@
                     <ul class="main-menu">
 
                         <li class="menu-item">
-                            <i class="bi bi-clipboard-plus-fill" style="font-size: 1.5rem; color: white;"></i>
-                            <a href="registrar.php" id="nav-iniciar">Registrar Producto</a>
+                            <i class="bi bi-cart-fill" style="font-size: 1.5rem; color: white;"></i>
+                            <a href="#" id="carrito">0</a>
                             
                         </li>
 
                         <li class="menu-item">
-                            <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
-                            <a href="login.php" id="nav-iniciar">Inicia Sesion</a>
+                            <i class="bi bi-clipboard-plus-fill" style="font-size: 1.5rem; color: white;"></i>
+                            <a href="registrar.php" id="nav-iniciar">Registrar Producto</a>
                         </li>
                         <li class="menu-item">
-                            <i class="bi-box-arrow-in-right" style="font-size: 1.5rem; color: white;"></i>
-                            <a href="crear.php" id="nav-crear">Crear cuenta</a>
+                            <i class="bi-person-circle" style="font-size: 1.5rem; color: white;"></i>
+                            <a href="crear.php" id="nav-crear">Mi Perfil</a>
                         </li>
                     </ul>
                 </nav>
