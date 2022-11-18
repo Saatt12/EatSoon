@@ -37,7 +37,7 @@ if(!$create){
      
 }
 
-    header('Location: crear.php');
+    header('Location: login.php');
 }
         
     
