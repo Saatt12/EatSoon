@@ -70,7 +70,7 @@
 
         <?php require $page; ?>
 
-
+ 
 <script src="<?=RUTA?>/assets/js/paginacion.js"></script>        
 <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
