@@ -1,4 +1,5 @@
- swal({
+//Crear cuenta
+swal({
      title: "Crea tu Cuenta!",
     text: "No te olvides llenar todos lo campos!!!",
     icon: "info",

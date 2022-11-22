@@ -32,7 +32,7 @@
                         <tr>
                             <td><i class="bi bi-person " ></i> &nbsp Nombres:<span class="text-danger">*</span></td>
                             <td><input class="inputAlinear" class="form-control"  id="nombre" name="nombre" placeholder= "Ingrese sus nombres" 
-                            oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ ]/g,'')" required minlength ="3" maxlength ="15" ></td>
+                            oninput="this.value = this.value.replace(/[^a-z A-Z ñ-Ñ]/,'')" required minlength ="3" maxlength ="15" ></td>
                         
                         </tr>
                            
