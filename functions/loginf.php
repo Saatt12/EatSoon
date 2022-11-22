@@ -37,4 +37,24 @@
         $query->execute();
         return count($query->fetchAll()) == 0;
     }
+
+
+
+
+     //** controlar si existe un usuario */
+     function Existe_Usuario($con, $data){
+        $nombre = $data["usuario"];
+        $contraseña = $data["password"];
+        $query = $con->prepare("SELECT * FROM usuario WHERE nombre = '$nombre' AND contraseña = '$contraseña' LIMIT 1");
+        $query->execute();
+        return count($query->fetchAll()) == 1;
+    }
+
+    function loginUser($con, $data){
+        if(Existe_Usuario($con, $data)){
+            
+        }else{
+            
+        }
+    }
 ?>

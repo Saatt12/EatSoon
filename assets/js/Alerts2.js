@@ -1,3 +1,4 @@
+//Registrar Producto
 swal({
     title: "Registra tu producto!!!",
     text: "No te olvides llenar todos lo campos!!!",
