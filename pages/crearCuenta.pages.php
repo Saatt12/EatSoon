@@ -39,7 +39,7 @@
                         <tr>
                             <td><i class="bi bi-person" ></i> &nbsp Apellidos:<span class="text-danger">*</span></td>
                             <td><input type="text" class="inputAlinear" id="apellido" name="apellido" placeholder= "Ingrese sus apellidos" 
-                            oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ ]/g,'')"  minlength ="3" maxlength ="15" required></td>
+                            oninput="this.value = this.value.replace(/[^a-z A-Z ñ-Ñ]/,'')"  minlength ="3" maxlength ="15" required></td>
                         </tr>
                         <tr class="filaTabla">
                             <td><i class="bi bi-credit-card-2-front"></i> &nbsp C.i:<span class="text-danger">*</span></td>
