@@ -37,4 +37,12 @@
         $query->execute();
         return count($query->fetchAll()) == 0;
     }
+
+    function setPedido($con){
+        $ci = $data["ci"];
+        $email = $data["email"];
+        $query = $con->prepare("SELECT * FROM usuario WHERE ci = '$ci' OR correo = '$email' LIMIT 1");
+        $query->execute();
+        return count($query->fetchAll()) == 0;
+    }
 ?>
