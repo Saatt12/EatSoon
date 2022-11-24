@@ -39,9 +39,8 @@
     }
 
     function setPedido($con){
-        $ci = $data["ci"];
-        $email = $data["email"];
-        $query = $con->prepare("SELECT * FROM usuario WHERE ci = '$ci' OR correo = '$email' LIMIT 1");
+
+        $query = $con->prepare("INSERT INTO pedido VALUES('ci','123','5','3','5','5')");
         $query->execute();
         return count($query->fetchAll()) == 0;
     }
