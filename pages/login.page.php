@@ -21,6 +21,11 @@
    <input class="btn btn-success" type="submit" value="Ingresar">
    
    </form>
+
+   <?php if(isset($_GET["error"])): ?>
+      <!-- Poner modal de errores -->
+      <center><p><?php echo $_GET["error"]?></p></center>
+   <?php endif; ?>
 </div> 
 
 
