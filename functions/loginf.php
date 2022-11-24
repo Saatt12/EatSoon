@@ -52,9 +52,11 @@
 
     function loginUser($con, $data){
         if(Existe_Usuario($con, $data)){
-            
+            //codigo para loguearse
+            header('Location: login.php');
         }else{
-            
+            $error = "Usuario incorrecto";
+            header('Location: login.php?error='.$error);
         }
     }
 ?>
