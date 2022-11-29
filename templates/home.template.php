@@ -47,6 +47,10 @@
                     <ul class="main-menu">
 
                         <li class="menu-item">
+                                <a class="bi bi-cart-fill" style="font-size: 1.5rem; color: white; padding: 0 20px;"  data-bs-toggle="modal" data-bs-target="#demo">0</a>
+                        </li>
+
+                        <li class="menu-item">
                             <i class="bi bi-clipboard-plus-fill" style="font-size: 1.5rem; color: white;"></i>
                             <a href="registrar.php" id="nav-iniciar">Registrar Producto</a>
                             

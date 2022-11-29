@@ -46,65 +46,10 @@
 
                     <ul class="main-menu">
 
+
+                        
                         <li class="menu-item">
-                            <a class="bi bi-cart-fill" style="font-size: 1.5rem; color: white; padding: 0 20px;"  data-bs-toggle="modal" data-bs-target="#demo"></a>
-                            
-                            <!-- cuerpo modal -->
-                            <div class="modal fade" id="demo" >
-                                <div class="modal-dialog modal-lg">
-                                    <div class="modal-content bg-dark">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" style="color:white;">Mi Carrito</h1>
-                                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <table class="table table-dark">
-                                                <thead>
-                                                    <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">Item</th>
-                                                    <th scope="col">Cantidad</th>
-                                                    <th scope="col">Accion</th>
-                                                    <th scope="col">Total</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                    <td>@mdo</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                    <td>@fat</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <th scope="row">3</th>
-                                                    <td>Larry</td>
-                                                    <td>the Bird</td>
-                                                    <td>@twitter</td>
-                                                    <td>@twitter</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>                                   
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-warning link-light" data-bs-dismiss="modal" style="padding: .25rem 1rem;
-                                            border-radius: 4px;                              background-color: goldenrod;
-                                            color: white;
-                                            font-weight: bold;
-                                            text-align: center;">Cerrar</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                            <!-- fin cuerpo modal -->
-                          
+                            <a class="bi bi-cart-fill" style="font-size: 1.5rem; color: white; padding: 0 20px;"  data-bs-toggle="modal" data-bs-target="#demo">0</a>
                         </li>
 
                         <li class="menu-item">

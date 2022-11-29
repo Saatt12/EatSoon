@@ -19,12 +19,12 @@
             <div class="row ">
                 <div class="wrap-contenido__hero">
                     <div class="contenido__hero">
-                        <h2>¿Que te apetece?</h2>
-                        <p>búscalo aquí</p>
+                        <h2>¿Qué te apetece?</h2>
+                        <p>Búscalo aquí</p>
 
                     </div>
                     <div class="input-group rounded">
-                        <input type="text" class="form-control rounded" placeholder="¿Que te gustaria probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
+                        <input type="text" class="form-control rounded" placeholder="¿Qué te gustaría probar?"oninput="this.value = this.value.replace(/[^a-z A-Z]/,'')" required
                         id="buscador" maxlength="40">
                         <span class="input-group border-0" id="search-addon">
                         <i class="bi bi-search" style="color:black; position:absolute; right:10px; bottom: 7px"></i>

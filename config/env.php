@@ -1,12 +1,12 @@
 <?php
     /** URL raiz del proyecto */    
-    define('RUTA', 'http://localhost/Proyecto/EatSoon');
+    define('RUTA', 'http://localhost:7200');
 
     $db_config = [
         'db_user' => 'root',
-        'db_pass' => '',
-        'db_name' => 'eatsoon',
-        'db_host' => '127.0.0.1',
+        'db_pass' => 'kevinguti',
+        'db_name' => 'ETS',
+        'db_host' => 'eatsoon',
         'db_port' => '3306'
     ];
     $proPage = 12;

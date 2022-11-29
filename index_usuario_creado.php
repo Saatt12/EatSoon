@@ -40,5 +40,5 @@
 
     $page = './pages/inicio.page.php'; // Nombre y ruta de la pagina
     require './templates/homeUsuarioCreado.template.php'; // Require template
-
+    require './templates/carrito.template.php';
 ?>
