@@ -4,8 +4,6 @@
     require './config/conexion.php';
     require './functions/product.php';
 
-
-
     
     $con = conexion($db_config);
     
