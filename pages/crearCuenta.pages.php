@@ -101,7 +101,8 @@
                     -->
                     
                     </form>
-                    <div class="modal fade " id=myModal>
+                     <!--borrar-->
+                     <div class="modal fade " id=myModal>
             <div class="modal-dialog modal-block">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -134,6 +135,7 @@
             </div>
     
         </div>
+                      <!--borrar-->
                 </div>
               </div>
                 
