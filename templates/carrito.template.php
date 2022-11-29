@@ -54,7 +54,7 @@
                                                    
                     <p class="link-light">Total: (cantidad)Bs.</p>
 
-                    <td><button type="button" class="btn btn-success link-light" data-bs-dismiss="modal" style="padding: .25rem 1rem;border-radius: 4px; color: white; font-weight: bold;
+                    <td><button type="button" class="btn btn-success link-light" data-bs-dismiss="modal" style="padding: .25rem 1rem;border-radius: 6px; color: white; font-weight: bold;
                     text-align: center;">Comprar</button></td>
                 </tr>
             </div>
