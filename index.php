@@ -4,9 +4,6 @@
     require './config/conexion.php';
     require './functions/product.php';
 
-
-
-    
     $con = conexion($db_config);
     
     $folder_save = 'storage/'; // carpeta de donde se eliminaran tus imagenes
@@ -26,7 +23,6 @@
     }else{
         $actual = 0;
     }
-
 
     //$productos = getProducts($con);
     //limitarProductos($con); 

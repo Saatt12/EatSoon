@@ -4,9 +4,6 @@
     require './config/conexion.php';
     require './functions/product.php';
 
-
-
-    
     $con = conexion($db_config);
     
     $folder_save = 'storage/'; // carpeta de donde se eliminaran tus imagenes
@@ -27,14 +24,11 @@
         $actual = 0;
     }
 
-
     //$productos = getProducts($con);
     //limitarProductos($con); 
     $productos = getProductoPage($con,$actual,$proPage);
     redireccionar($productos,RUTA);
     $numPaginas = getCantPaginas($con,$actual,$proPage);
-
-    
 
     $title = "Inicio Pagina"; // Nombre del title
 

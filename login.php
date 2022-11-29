@@ -18,7 +18,6 @@
         loginUser($con, $data);
     }
     
-    
     $title = "Login"; // Nombre del title
 
     $page = './pages/login.page.php';  // Nombre y ruta de la pagina.
