@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="<?=RUTA?>/assets/css/styles.css">
      
 
+    
+
     <title><?=$title?></title>
     <script type="text/javascript">  
         $(document).ready(function () {
