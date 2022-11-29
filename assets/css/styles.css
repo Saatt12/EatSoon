@@ -72,6 +72,8 @@ li.menu-item a:hover {
     display: none;
 }
 
+
+
 /* buscador */
 
 .hero {
@@ -294,19 +296,21 @@ li.menu-item a:hover {
         font-size: 5px;
     }
 }
-    
+
 /*botones de crearCuenta*/
 .btn-setupA {
     color: #ffffff;
-    background-color: #daa520 ;
-    
+    background-color: #daa520;
+
 }
+
 .btn-setupC {
     color: #ffffff;
-    
-}   
+
+}
+
 .btn-space {
     margin-right: 50px;
     margin-left: 50px;
-   
-  }
+
+}
