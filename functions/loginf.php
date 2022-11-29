@@ -8,7 +8,6 @@
                             VALUES (:ci, :nombre, :apellido, :direccion, :telefono, :email, :pass)'
             );
 
-
             $query->execute([
                 ':nombre' => $data['nombre'],
                 ':apellido' => $data['apellido'],
@@ -37,10 +36,6 @@
         $query->execute();
         return count($query->fetchAll()) == 0;
     }
-
-
-
-
      //** controlar si existe un usuario */
      function Existe_Usuario($con, $data){
         $nombre = $data["usuario"];

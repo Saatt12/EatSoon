@@ -1,13 +1,11 @@
 
 <?php 
-
     function createUser($con, $data){        
           if(no_repetirUsuario($con, $data)){  
             $query = $con->prepare(
                 'INSERT INTO usuario (ci, nombre, apellido, direccion, telefono, correo, contraseña)
                             VALUES (:ci, :nombre, :apellido, :direccion, :telefono, :email, :pass)'
             );
-
 
             $query->execute([
                 ':nombre' => $data['nombre'],
@@ -22,8 +20,6 @@
 // Para direccionar automaticamente al inicio despues de crear una cuenta
           header("Location: index.php");
               die();
-
-
             return true;
     }else{
         return false;
