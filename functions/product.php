@@ -25,7 +25,6 @@
         
     }
 
-
 function getProductoPage($con,$actual,$limite){
        
         
@@ -51,9 +50,6 @@ function getProductoPage($con,$actual,$limite){
             $query->execute();
         }
     }
-
-
-
 
     function createProduct($con, $data, $folder_save, $uploadFile){
         if(!existProduct($con, $data['nombre_producto'])){ //si no existe, se registra
