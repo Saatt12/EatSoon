@@ -4,8 +4,8 @@
 
     $db_config = [
         'db_user' => 'root',
-        'db_pass' => 'kevinguti',
-        'db_name' => 'ETS',
+        'db_pass' => 'admin',
+        'db_name' => 'eatsoon',
         'db_host' => 'eatsoon',
         'db_port' => '3306'
     ];
