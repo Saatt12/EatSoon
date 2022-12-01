@@ -4,8 +4,6 @@
     require './config/conexion.php';
     require './functions/product.php';
 
-
-
     
     $con = conexion($db_config);
     
@@ -40,5 +38,5 @@
 
     $page = './pages/inicio.page.php'; // Nombre y ruta de la pagina
     require './templates/home.template.php'; // Require template
-
+    require './templates/carrito.template.php';
 ?>
