@@ -10,6 +10,8 @@ if (!$_SESSION){
 }
     $con = conexion($db_config);
 
+
+    
     /** Verificar si se envio por el metodo POST */
     if($_SERVER['REQUEST_METHOD'] == 'POST'){    
         $data = [
