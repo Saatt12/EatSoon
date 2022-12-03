@@ -15,7 +15,6 @@ function crypto_rand_secure($min, $max)
     return $min + $rnd;
 }
 
-
 function getToken($length)
 {
     $token = "";
@@ -74,11 +73,19 @@ function agregarAlCarrito($con, $data)
 }
 function totalProductosEnCarrito($con, $data)
 {
-    $code = $data["code"];
-    $query = $con->prepare("SELECT SUM(cantidad) AS total FROM carrito  WHERE code = '$code'");
-    $query->execute();
-    $row = $query->fetch(PDO::FETCH_ASSOC);
-    return $row['total'];
+    if ($con && $data) {
+        $code = $data["code"];
+        try {
+
+            $query = $con->prepare("SELECT SUM(cantidad) AS total FROM carrito  WHERE code = '$code'");
+            $query->execute();
+            $row = $query->fetch(PDO::FETCH_ASSOC);
+            return $row['total'];
+        } catch (Exception $e) {
+            var_dump($e->getMessage());
+        }
+    }
+    return 0;
 }
 function enCarrito($con, $data)
 {
@@ -166,8 +173,8 @@ function vaciarItem($con, $data){
 }
 function comprarItem($con, $data){
     if ($con && $data) {
-        if(isset($_COOKIE['user'])){
-            $email = $_COOKIE['user'];
+        if($_SESSION['user']!=null){
+            $email = session__get("user");
             $usuario = $con->prepare("SELECT * FROM usuario WHERE correo = '$email' LIMIT 1");
             $usuario->execute();
             $user = $usuario->fetch(PDO::FETCH_ASSOC);
