@@ -26,6 +26,7 @@
       <!-- Poner modal de errores -->
       <center><p><?php echo $_GET["error"]?></p></center>
    <?php endif; ?>
+   
 </div> 
 
 
