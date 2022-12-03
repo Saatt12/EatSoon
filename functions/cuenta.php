@@ -2,12 +2,12 @@
 <?php 
 
     function createUser($con, $data){        
-          if(no_repetirUsuario($con, $data)){  
+        if(no_repetirUsuario($con, $data)){
+
             $query = $con->prepare(
                 'INSERT INTO usuario (ci, nombre, apellido, direccion, telefono, correo, contraseña)
                             VALUES (:ci, :nombre, :apellido, :direccion, :telefono, :email, :pass)'
             );
-
 
             $query->execute([
                 ':nombre' => $data['nombre'],
@@ -19,16 +19,13 @@
                 ':pass' => $data['password']
             ]);
 
-// Para direccionar automaticamente al inicio despues de crear una cuenta
-          header("Location: index.php");
-              die();
-
-
+            // Para direccionar automaticamente al inicio despues de crear una cuenta
+            // die();
             return true;
-    }else{
-        return false;
+        }else{
+            return false;
+        }
     }
-}
 
     function no_repetirUsuario($con, $data){
         $ci = $data["ci"];

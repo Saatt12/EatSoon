@@ -1,10 +1,13 @@
 <?php
-
-    require './config/env.php';
+error_reporting(E_ALL ^ E_NOTICE);
+require './functions/session.php';
+require './config/env.php';
     require './config/conexion.php';
     require './functions/product.php';
     require './functions/file.php';
-
+if (!$_SESSION){
+    iniSesion();
+}
     $con = conexion($db_config);
     
 
@@ -24,12 +27,14 @@
         $create = createProduct($con, $data, $folder_save, function($ruta, $file){ 
             return uploadFile($ruta, $file); //manipular archivo
         });
-
+        $message="";
         if(!$create){
-            echo "El producto ingresado ya existe";
+            $message= "El producto ingresado ya existe";
+        }else{
+            $message= "El producto registrado";
         }
 
-        header('Location: registrar.php');
+        header('Location: registrar.php?m='.$message);
     }
     
     
@@ -37,5 +42,5 @@
 
     $page = './pages/registro.page.php';  // Nombre y ruta de la pagina
     require './templates/registrarP.template.php'; // Require template
-
+exit();
 ?>
