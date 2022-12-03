@@ -101,7 +101,41 @@
                     -->
                     
                     </form>
+                     <!--borrar-->
+                     <div class="modal fade " id=myModal>
+            <div class="modal-dialog modal-block">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-tittle">Lista de solicitud de pedidos</h5>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <?php
+                            for($i=0; $i<5;$i++):
 
+                        ?>
+                        
+                        <div class="form-group mt-3">
+                            <button type="submit" class="btn btn-warning btn-block styleBtn" data-bs-toggle="modal" data-bs-target="#my2Modal">
+                                Pedido #0000    Usuario: edgar copa     Fecha: 22/11/2022</button>       
+                        </div>
+
+                        <?php endfor; ?>
+                    
+
+                       
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+        </div>
+                      <!--borrar-->
                 </div>
               </div>
                 

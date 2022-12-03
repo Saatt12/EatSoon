@@ -1,4 +1,6 @@
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function() {
@@ -58,9 +60,11 @@
                                         <div class="col-5">
                                         <div class="row justify-content-center">
                                                 <div class="col-8">
+
                                                     <div><h5>Pedido #<?php echo($pedido['codPedido']);?></h5></div>
                                                     <div><h5>Usuario:<?php echo($pedido['usuario_CI']);?></h5></div>
                                                     <div><h5>Fecha: <em><?php echo($pedido['fecha_Pedido']);?></em></h5></div>
+
                                                     <img src="<?= RUTA ?>/assets/img/bien amarillo.jpeg" width="100" alt="">
                                                 </div>
                                         </div>
