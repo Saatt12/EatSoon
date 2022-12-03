@@ -1,13 +1,5 @@
 //Registrar Producto
-swal({
-    title: "Registra tu producto!!!",
-    text: "No te olvides llenar todos lo campos!!!",
-    icon: "info",
-    closeOnClickOutside: false,
-    timer: 5000,
-    button: "Aceptar!",
-  
-  });
+
   
   function fntdescartar(id){
     buttons: ["Cancelar", "Aceptar"],
