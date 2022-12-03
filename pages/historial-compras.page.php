@@ -4,6 +4,7 @@
     }
 </style>
 
+
 <div class="content-history">
     <a href="<?=RUTA?>/historial-single.php" class="item-history">
         <div class="item-history--block"> <h2>Compra #0000</h2> </div>
