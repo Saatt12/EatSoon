@@ -1,13 +1,5 @@
 //Crear cuenta
-swal({
-     title: "Crea tu Cuenta!",
-    text: "No te olvides llenar todos lo campos!!!",
-    icon: "info",
-    closeOnClickOutside: false,
-    timer: 5000,
-     button: "Aceptar!",
-  
-   });
+
   
   function fntdescartarCuenta(id){
 
