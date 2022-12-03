@@ -35,6 +35,7 @@
                     <?php }else{ ?>
                     <ul class="main-menu">
 
+                    
                         <li class="menu-item">
                             <img class="icon-historial-img" width="40" src="<?=RUTA?>/assets/img/historial.jpeg" alt="">
                             <a href="<?=RUTA?>/historial.php">Historial de compras</a>
