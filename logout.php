@@ -6,6 +6,8 @@ if (!$_SESSION){
     iniSesion();
 }
 
+
+
 if (isset($_SESSION) && session__get("user")){
     destruirSesion();
 }
