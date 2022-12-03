@@ -15,6 +15,7 @@ function crypto_rand_secure($min, $max)
     return $min + $rnd;
 }
 
+
 function getToken($length)
 {
     $token = "";
