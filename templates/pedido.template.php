@@ -29,12 +29,15 @@
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function () 
+        {
         (function($) {
-            $('#buscador').keyup(function () {
+            $('#buscador').keyup(function () 
+            {
                 var ValorBusqueda = new RegExp($(this).val(), 'i');
                 $('.wrap .tarjeta-rest').hide();
-                $('.wrap .tarjeta-rest').filter(function () {
+                $('.wrap .tarjeta-rest').filter(function () 
+                {
                     return ValorBusqueda.test($(this).text());
                 }).show();
             })
