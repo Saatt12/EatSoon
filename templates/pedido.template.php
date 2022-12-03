@@ -19,9 +19,12 @@
 </script>
 <script src="<?=RUTA?>/assets/js/bootstrap/bootstrap.min.js">
 </script>
-<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="http://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript">
+
+</script>
 <script>
-    document.querySelector('.mini-photo-wrapper').addEventListener('click', function() {
+    document.querySelector('.mini-photo-wrapper').addEventListener('click', function() 
+    {
         document.querySelector('.menu-container').classList.toggle('active');
     });
 </script>
