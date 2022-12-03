@@ -1,7 +1,7 @@
 
 <?php 
 
-    
+    //limpiado
 
     function no_repetirUsuario($con, $data){
         $ci = $data["ci"];
