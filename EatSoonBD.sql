@@ -23,7 +23,7 @@ USE `eatsoon` ;
 -- -----------------------------------------------------
 -- Table `eatsoon`.`producto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eatsoon`.`producto` (
+CREATE TABLE producto (
   `id_producto` INT(11) NOT NULL AUTO_INCREMENT,
   `fecha_publicacion` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   `nombre_producto` VARCHAR(45) NOT NULL,
