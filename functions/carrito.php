@@ -34,7 +34,7 @@ function agregarAlCarrito($con, $data)
     if ($con && $data) {
         $pro = $data['producto_id'];
         $cod = $data['code'];
-        $query2 = $con->prepare("SELEC cantidad FROM carrito WHERE producto_id = '$pro' AND code='$cod'");
+        $query2 = $con->prepare("SELECT cantidad FROM carrito WHERE producto_id = '$pro' AND code='$cod'");
         $query2->execute();
         $existe = $query2->fetchAll();
         if (count($existe) > 0) {
