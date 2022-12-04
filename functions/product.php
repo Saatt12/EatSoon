@@ -47,7 +47,7 @@ function getProductoPage($con,$actual,$limite){
         $numeroProductos = count($query->fetchAll());
         //var_dump($numeroProductos);
         if($numeroProductos > 60){
-            $query = $con->prepare("DELETE FROM producto WHERE id_producto = (SELECT MIN(id_producto) FROM producto)");
+            $query = $con->prepare("DELET FROM producto WHERE id_producto = (SELECT MIN(id_producto) FROM producto)");
             $query->execute();
         }
     }
