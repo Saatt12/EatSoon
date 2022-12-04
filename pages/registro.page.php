@@ -16,6 +16,7 @@
 </div>
 -->
     
+
 <div class="pt-4 bg-dark ">
 <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-2.5" href="index.php"> &nbsp Volver</a>
     <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" > &nbsp Registra tu Producto</h2>

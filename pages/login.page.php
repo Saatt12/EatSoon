@@ -1,11 +1,11 @@
 
 <body>
     <div class="Caja">
-   <form action="" method="post">
+   <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
    <h1 class="animate__animated animate__backInLeft">Inicia Sesión</h1>
-   <p class="blanco">   Usuario: 
-      <input type="text" name="usuario" placeholder="ingrese su nombre" placeholder= "Ingrese sus nombres" 
-          oninput="this.value = this.value.replace(/[^\a-\z\A-\Z\ñ\Ñ ]/g,'')" required minlength ="3" maxlength ="15" ></p>
+   <p class="blanco">   Correo: 
+      <input type="email" name="correo" placeholder="ingrese su correo" 
+         required minlength ="3" maxlength ="40" ></p>
 
    <p class="blanco">   Contraseña:
          <input id="ocultarpass" type="checkbox"  style="display:none;" onclick="mostrarContrasena()">
@@ -26,7 +26,6 @@
       <!-- Poner modal de errores -->
       <center><p><?php echo $_GET["error"]?></p></center>
    <?php endif; ?>
-   
 </div> 
 
 
