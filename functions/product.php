@@ -102,4 +102,22 @@ function getProductoPage($con,$actual,$limite){
 
      }
 
+	function guardarTrigger($con){
+		$query1= "CREATE TRIGGER trigger
+    AFTER UPDATE ON clientes
+    FOR EACH ROW 
+    BEGIN
+        INSERT INTO tblauditabada (Apellido)
+        VALUES (OLD.Apellido)
+    END;";
+    $sql->query($query1);
+ 
+ 
+ 
+$query2= "UPDATE clientes
+    SET Apellido='{$apellido}'
+    WHERE identificacion='{$identificacion}'";
+    $res=$sql->query($query2);		
+	}
+
 ?>
