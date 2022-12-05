@@ -1,5 +1,6 @@
 <?php
 function mostrarPedido($con){
+
     if ($con) {
         if ($_SESSION['user']!=null) {
             $email = session__get("user");
