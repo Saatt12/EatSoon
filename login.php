@@ -21,6 +21,7 @@ if (!$_SESSION){
         if ($user!=null){
             iniSesion();
             session__set("user",$user['CORREO']);
+            session__set("user_id",$user['CI']);
             ob_start();
             $url = RUTA.'/index_usuario_creado.php';
             while (ob_get_status())
@@ -32,6 +33,7 @@ if (!$_SESSION){
             exit();
         }
     }
+    
     
     $title = "Login"; // Nombre del title
 

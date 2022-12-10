@@ -56,6 +56,7 @@
 
                                         <div class="details">
                                         <div id="profile-name"><a class="dropdown-item" href="logout.php">Cerrar session</a></div>
+                                        <div id="profile-footer"><a class="dropdown-item" href="otros_pedidos.php">Solicitudes Pedidos</a></div>
                                         <div id="profile-footer"><a class="dropdown-item" href="pedidos.php">Mi Pedido</a></div>
                                         </div>
                                     </div>
