@@ -7,8 +7,10 @@ if (!$_SESSION){
 }
 
 if (isset($_SESSION) && session__get("user")){
+    session__unset("user_id");
     destruirSesion();
 }
+unset($_SESSION);
 $url = RUTA.'/index.php';
 while (ob_get_status())
 {

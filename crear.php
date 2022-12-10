@@ -1,10 +1,12 @@
-
 <?php
-
-    require './config/env.php';
+error_reporting(E_ALL ^ E_NOTICE);
+require './functions/session.php';
+require './config/env.php';
     require './config/conexion.php';
-    require './functions/cuenta.php'; 
-
+    require './functions/cuenta.php';
+if (!$_SESSION){
+    iniSesion();
+}
     $con = conexion($db_config);
     
     /** Verificar si se envio por el metodo POST */
@@ -18,32 +20,35 @@
             'email' => $_POST['email'],
             'password' => $_POST['password'],
             'Cpassword' => $_POST['Cpassword']
-
         ];
-        if($data['password']==$data['Cpassword']){
-            $create = createUser($con, $data);
 
-        }else{
-            //para mostrar mensaje no crear cuenta
-          
-            echo "<script type='text/javascript'>";
-            echo "mensajeexito(1)"; 
-            echo "</script> ";
-          
+        // if($data['password']==$data['Cpassword']){
+            
+        // }else{
+        //     //para mostrar mensaje no crear cuenta
+        //     // echo "<script type='text/javascript'>";
+        //     // echo "mensajeexito(1)"; 
+        //     // echo "</script> ";
+        // }
+
+        $create = createUser($con, $data);
+        if($create){
+           // header('Location: https://youtube.com');
+           $url = RUTA.'/login.php?m=Inicia sesion para confirmar tu cuenta';
+           while (ob_get_status())
+           {
+               ob_end_clean();
+           }
+           //header( "Location: $url" );
+           echo "<script>window.location = '$url'</script>";
+           
+           exit();
         }
+    }
     
-
-    if(!$create){
-         echo "La cuenta ingresado ya existe";
-         
-    }
-   
-        header('Location: crear.php');
-    }
-        
     $title = "Creacion de Cuenta"; // Nombre del title
 
-        $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
-        $img = '.img';
-        require './templates/crearC.template.php'; // Require template
+    $page = './pages/crearCuenta.pages.php';  // Nombre y ruta de la pagina
+    require './templates/crearC.template.php'; // Require template
+exit();
 ?>

@@ -1,23 +1,16 @@
 <?php
-<<<<<<< HEAD
-    /** URL raiz del proyecto */    
-<<<<<<< HEAD
-    define('RUTA', 'http://localhost/proyecto/EatSoon');
 
-=======
-    define('RUTA', 'http://localhost:8080/EatSoon/Eatsoon');
->>>>>>> 63171cc24f460b5ef25960f79fe53fb8b43c83fb
-=======
-session_start();   
-/** URL raiz del proyecto */
-define('RUTA', 'https://eatsoon-production-1bf3.up.railway.app');
->>>>>>> f03a6681df255f97efd81697a762472867798237
+    /** URL raiz del proyecto */ 
+    Date_default_timezone_set("America/La_Paz");
+    define('RUTA', 'https://eatsoonfinal.000webhostapp.com');
+session_start();
+    $db_config = [
+        'db_user' => 'id19942902_root',
+        'db_pass' => 'i<ng\Va2>9vx]$_{',
+        'db_name' => 'id19942902_eatsoonfinal',
+        'db_host' => 'localhost',
+        'db_port' => '3306'
+    ];
+    $proPage = 12;
+?>
 
-$db_config = [
-    'db_user' => 'root',
-    'db_pass' => 'xumWSCdMvdvlqpIzLGae',
-    'db_name' => 'railway',
-    'db_host' => 'containers-us-west-99.railway.app',
-    'db_port' => '6636'
-];
-$proPage = 12;

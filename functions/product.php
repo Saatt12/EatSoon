@@ -45,7 +45,6 @@ function getProductoPage($con,$actual,$limite){
         $query = $con->prepare("SELECT * FROM producto");
         $query->execute();
         $numeroProductos = count($query->fetchAll());
-        //var_dump($numeroProductos);
         if($numeroProductos > 60){
             $query = $con->prepare("DELET FROM producto WHERE id_producto = (SELECT MIN(id_producto) FROM producto)");
             $query->execute();
@@ -60,19 +59,25 @@ function getProductoPage($con,$actual,$limite){
 
             $data['imagen'] = $uploadFile($folder_save, $data['imagen']);
             $query = $con->prepare(
-                'INSERT INTO producto (id_producto, nombre_producto, cantidad, precio_producto, fecha_caducidad, imagen, desc_producto)
-                VALUES (null, :nombre_producto, :cantidad, :precio_producto, :fecha_caducidad, :imagen, :desc_producto)'
+                'INSERT INTO producto (id_producto, nombre_producto, cantidad, precio_producto, fecha_caducidad, imagen, desc_producto,pedido_codPedido, producto_usuario_id)
+                VALUES (null, :nombre_producto, :cantidad, :precio_producto, :fecha_caducidad, :imagen, :desc_producto,:pedido_codPedido, :producto_usuario_id)'
             );
-    
-            $query->execute([
-                ':nombre_producto' => $data['nombre_producto'],
-                ':cantidad' => intval($data['cantidad']),
-                ':precio_producto' => $data['precio_producto'],
-                ':fecha_caducidad' => $data['fecha_caducidad'],
-                ':imagen' => $data['imagen'], 
-                ':desc_producto' => $data['desc_producto']
-            ]);
-            
+            try {
+                $res= $query->execute([
+                    ':nombre_producto' => $data['nombre_producto'],
+                    ':cantidad' => intval($data['cantidad']),
+                    ':precio_producto' => $data['precio_producto'],
+                    ':fecha_caducidad' => $data['fecha_caducidad'],
+                    ':imagen' => $data['imagen'],
+                    ':desc_producto' => $data['desc_producto'],
+                    ':pedido_codPedido'=>1,
+                    ':producto_usuario_id' => $data['producto_usuario_id']
+                    
+                ]);
+            } catch (Exception $e) {
+                var_dump( $e->getMessage());
+            }
+
             return true;
         }else{
             return false;

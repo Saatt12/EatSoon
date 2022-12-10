@@ -101,47 +101,67 @@
                     -->
                     
                     </form>
-                     <!--borrar-->
-                     <div class="modal fade " id=myModal>
-            <div class="modal-dialog modal-block">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-tittle">Lista de solicitud de pedidos</h5>
-                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <?php
-                            for($i=0; $i<5;$i++):
 
-                        ?>
-                        
-                        <div class="form-group mt-3">
-                            <button type="submit" class="btn btn-warning btn-block styleBtn" data-bs-toggle="modal" data-bs-target="#my2Modal">
-                                Pedido #0000    Usuario: edgar copa     Fecha: 22/11/2022</button>       
-                        </div>
-
-                        <?php endfor; ?>
-                    
-
-                       
-    
-                    </div>
-                    <div class="modal-footer">
-                        <button class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-    
-                </div>
-    
-            </div>
-    
-        </div>
-                      <!--borrar-->
                 </div>
               </div>
                 
 
         </div>
     </section>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script>
+          function mostrarContrasena() {
+    var temp = document.getElementById("password");
+    if (temp.type === "password") {
+        temp.type = "text";
+    }
+    else {
+        temp.type = "password";
+    }
+}
+function mostrarContrasenaConfi() {
+  var temp = document.getElementById("Cpassword");
+  if (temp.type === "password") {
+      temp.type = "text";
+  }
+  else {
+      temp.type = "password";
+  }
+}
+ function fntdescartarCuenta(id){
+
+    swal({
+      title: "¿Estás seguro?",
+      text: "Se cancelará el registro de tu Cuenta!",
+      icon: "warning",
+      closeOnClickOutside: false,
+      buttons: ["No", "Si"],
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        document.getElementById('registroCuenta').reset();
+
+        
+        registroCuenta.reset();
+        
+  
+        swal("Se canceló el registro con éxito!!!", {
+          closeOnClickOutside: false,
+          icon: "success",
+        });
+
+      } else {
+        swal("No se realizo nada...", {
+          closeOnClickOutside: false,
+          icon: "info",
+        });
+
+      }
+    });
+  
+  }
+    </script>
     <script src="confirmarContraseña.js"></script>  
     <!-- Optional JavaScript; choose one of the two! -->
 

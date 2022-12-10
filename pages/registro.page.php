@@ -16,7 +16,6 @@
 </div>
 -->
     
-
 <div class="pt-4 bg-dark ">
 <a class="btn btn-warning bi bi-arrow-left-circle-fill border-bottom  p-2.5" href="index.php"> &nbsp Volver</a>
     <h2 style="text-align:center; color: rgb(218, 165, 32);" class="bi bi-clipboard-plus" > &nbsp Registra tu Producto</h2>
@@ -34,6 +33,12 @@
 <div class="mt-3 card shadow col-xs-12 col-sm-6 col-md-6 col-lg-4   p-4">     
     <div class="mb-1">
         <?php //Este es el formulario donde se captura los datos que el usuario introduce de la H3?>
+        <?php if (isset($_GET['m'])) {
+        ?>
+        <div class="alert alert-success" role="alert">
+        <?php echo($_GET['m'])?>
+        </div>
+        <?php }?>
         <form id = "registroProducto" action="<?php echo $_SERVER['PHP_SELF']; ?>"  method="POST" enctype="multipart/form-data">
             <div class="mb-4">
                 <label for="nombre_producto"><i class="bi bi-bag-check-fill"></i> &nbsp Nombre del producto <span class="text-danger">*</span></label>
@@ -105,3 +110,42 @@
         <img class="  img-fluid; bi bi-clipboard" style="color: white ;"  width="10%" /> 
     </div> 
 </div>
+ <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+     <script>
+       function fntdescartar(id){
+    buttons: ["Cancelar", "Aceptar"],
+    swal({
+      title: "¿Estás seguro?",
+      text: "Se cancelará el registro del producto!",
+      icon: "warning",
+      closeOnClickOutside: false,
+
+      buttons: ["Cancelar", "Aceptar"],
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        document.getElementById('registroProducto').reset();
+        document.getElementById("imagen").value = "";
+        registroProducto.reset();
+
+  
+        swal("Se canceló el registro con éxito!!!", {
+          closeOnClickOutside: false,
+
+          icon: "success",
+        });
+      } else {
+        swal("No se realizó nada...", {
+          closeOnClickOutside: false,
+
+          icon: "info",
+        });
+      }
+    });
+  
+
+
+
+  }
+     </script>

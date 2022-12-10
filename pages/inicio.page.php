@@ -59,6 +59,15 @@
             <h1 class="encabezado"></h1>
         </div>
 
+        <?php if (isset($_GET['m'])) {
+        ?>
+        <div class="alert alert-success text-center" role="alert">
+        <?php echo($_GET['m'])?>
+        </div>
+        <?php }?>
+        <?php if (count($productos)==0) {?>
+                <div class="alert alert-danger text-center" role="alert">No hay productos</div>
+            <?php }?>
         <div class="wrap column-4 columns">
             <?php
             //$cantProducto = $productos->num_rows;
@@ -88,19 +97,9 @@
                                     <input type="hidden" name="action" value="agregar" />
                                     <input type="hidden" name="page" value="<?php echo ($_GET['page']) ?>" />
                                     <input type="hidden" name="producto_id" value="<?php echo $producto['id_producto']; ?>" />
-                                    <button type="submit" class="btn text-light" style="padding: .25rem 1rem;
-                                border-radius: 4px;
-                                background-color: goldenrod;
-                                color: white;
-                                font-weight: bold;
-                                width: 100%;
-                                text-align: center;"> Añadir al Carrito</button>
+                                    <button type="submit" class="btn text-light agregar-card"> Añadir al Carrito</button>
                                 </form>
-                                <button type="button" class="btn text-light " data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto']; ?>" style="padding: .25rem 1rem;
-                                border-radius: 4px;                              background-color: goldenrod;
-                                color: white;
-                                font-weight: bold;
-                                text-align: center;">Más Información </button>
+                                <button type="button" class="btn text-light information-card" data-bs-toggle="modal" data-bs-target="#my<?php echo $producto['id_producto']; ?>">Más Información </button>
                             </div>
                             <!-- código modal -->
                             <div class="modal fade" id="my<?php echo $producto['id_producto']; ?>">
@@ -181,3 +180,11 @@
 <footer class="bg-dark">
     <div style="height: 6vh;"></div>
 </footer>
+<?php if (isset($_GET['ver'])) {
+        ?>
+       <script>
+        $(document).ready(function(){
+            $('#demo').modal('show');
+        });
+       </script>
+<?php }?>

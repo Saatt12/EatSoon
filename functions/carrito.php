@@ -38,7 +38,7 @@ function agregarAlCarrito($con, $data)
         $query2->execute();
         $existe = $query2->fetchAll();
         if (count($existe) > 0) {
-            $carr = $con->prepare("UPDATE carrito SET cantidad = ? WHERE producto_id = ? AND code= ?");
+            $carr = $con->prepare("UPDATE carrito SET cantidad = ?  WHERE producto_id = ? AND code= ?");
             $contar = $existe[0]['cantidad'] + 1;
             /*array respetando el orden de cada valor*/
             $arrParams = array($contar, $pro, $cod);
@@ -73,8 +73,10 @@ function agregarAlCarrito($con, $data)
 }
 function totalProductosEnCarrito($con, $data)
 {
+
+    $code = $data["code"];
     if ($con && $data) {
-        $code = $data["code"];
+
         try {
 
             $query = $con->prepare("SELECT SUM(cantidad) AS total FROM carrito  WHERE code = '$code'");
@@ -118,19 +120,28 @@ function aumentarItem($con, $data)
     if ($con && $data) {
         $pro = $data['carrito_id'];
         $cod = $data['code'];
-        $query2 = $con->prepare("SELECT cantidad FROM carrito WHERE carrito_id = '$pro' AND code='$cod'");
+        $query2 = $con->prepare("SELECT * FROM carrito WHERE carrito_id = '$pro' AND code='$cod'");
         $query2->execute();
         $existe = $query2->fetchAll();
         if (count($existe) > 0) {
-            $carr = $con->prepare("UPDATE carrito SET cantidad = ? WHERE carrito_id = ? AND code= ?");
-            $contar = $existe[0]['cantidad'] + 1;
-            /*array respetando el orden de cada valor*/
-            $arrParams = array($contar, $pro, $cod);
-            /*Pasamos el array en el execute*/
-            if ($carr->execute($arrParams)) {
-                return true;
-            } else {
-                return false;
+            $product_id= $existe[0]['producto_id'];
+            $queryP = $con->prepare("SELECT * FROM producto WHERE id_producto = '$product_id' LIMIT 1");
+            $queryP->execute();
+        
+            $row = $queryP->fetch(PDO::FETCH_ASSOC);
+            $stock=$row['cantidad'];
+            $contar = intval($existe[0]['cantidad']) + 1;
+          //var_dump($product_id, $existe ,$row, $stock, $contar);
+            if ($contar<=$stock) {                
+                $carr = $con->prepare("UPDATE carrito SET cantidad = ? WHERE carrito_id = ? AND code= ?");
+                /*array respetando el orden de cada valor*/
+                $arrParams = array($contar, $pro, $cod);
+                /*Pasamos el array en el execute*/
+                if ($carr->execute($arrParams)) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
         }
     }
@@ -192,16 +203,28 @@ function comprarItem($con, $data){
                             producto_id_producto,
                             usuario_CI,
                             tatal_Pedido,
-                            fecha_Pedido)
-                        VALUES (null, :producto_id_producto, :usuario_CI, :tatal_Pedido, :fecha_Pedido)'
+                            fecha_Pedido,estado)
+                        VALUES (null, :producto_id_producto, :usuario_CI, :tatal_Pedido, :fecha_Pedido, :estado)'
                     );
                     try {
                         $res= $query2->execute([
                         ':producto_id_producto'=>$value['producto_id'],
                         ':usuario_CI'=>$user['CI'],
                         ':tatal_Pedido'=>$value['cantidad'],
-                        ':fecha_Pedido'=>date('y-m-d H:i:s')
+                        ':fecha_Pedido'=>date('y-m-d H:i:s'),
+                        ':estado'=>"pedido"
                         ]);
+                        $pros=$value['producto_id'];
+                        $queryP = $con->prepare("SELECT * FROM producto WHERE id_producto = '$pros' LIMIT 1");
+                        $queryP->execute();
+                        $row = $queryP->fetch(PDO::FETCH_ASSOC);
+                        $stock=$row['cantidad'];
+                        $carr = $con->prepare("UPDATE producto SET cantidad = ? WHERE id_producto = ?");
+                        $total=abs($stock - $value['cantidad']);
+                        $arrParams = array($total, $pros);
+                        if ($carr->execute($arrParams)){
+                            #code
+                        }
                     } catch (Exception $e) {
                        var_dump($e->getMessage());
                     }
@@ -213,6 +236,22 @@ function comprarItem($con, $data){
         }else{
             return false;
         }
+    }
+    return false;
+}
+function confirmarCompra($con, $data){
+    if ($con && $data) {
+       $pedido= $data['pedido'];
+       $estado= $data['estado'];
+       $user= $data['user_id'];
+       $pedido_result = $con->prepare("UPDATE pedido SET estado = ?,usuario_CI=? WHERE codPedido = ?");
+       $arrParams = array($estado,$user, $pedido);
+       $res=$pedido_result->execute($arrParams);
+       if ($res) {
+           return true;
+       } else {
+           return false;
+       }
     }
     return false;
 }

@@ -1,3 +1,6 @@
+
+<!-- modal carrito, pero mejor si es offcanvas -->
+
 <?php
 $total=0;
 ?>
@@ -20,9 +23,12 @@ $total=0;
                         </tr>
                     </thead>
                     <tbody>
+
+                    <?php $i=1; ?>
                         <?php foreach ($enCarrito as $carito) : ?>
                             <tr>
-                                <th scope="row"><?php echo ($carito['carrito_id']); ?></th>
+                                <th scope="row" id="<?php echo ($carito['carrito_id']);?>"><?php echo($i);?></th>
+
                                 <td><img src="<?php echo RUTA . '/storage/' . $carito['imagen'] ?>" width="30" /> <?php echo ($carito['nombre_producto']); ?></td>
                                 <td><?php echo ($carito['cantidad']); ?></td>
                                 <td>
@@ -54,7 +60,9 @@ $total=0;
                                     </form>
                                 </td>
                             </tr>
-                        <?php endforeach; ?>
+
+                        <?php $i++; endforeach; ?>
+
                     </tbody>
                 </Table>
             </div>
@@ -64,7 +72,9 @@ $total=0;
                     <form action="carrito.php" method="post">
                         <input type="hidden" name="action" value="vaciar" />
                         <input type="hidden" name="page" value="<?php echo ($_GET['page']) ?>" />
-                        <button type="submit" class="btn btn-danger link-light" data-bs-dismiss="modal" style="padding: .25rem 1rem;
+
+                        <button type="submit" class="btn btn-danger link-light" data-bs-dismiss="modal" style="background: #ffc107; padding: .25rem 1rem;
+
                     border-radius: 4px; color: white; font-weight: bold; text-align: center;">Vaciar Todo</button>
                     </form>
                     </td>
@@ -86,4 +96,7 @@ $total=0;
         </div>
     </div>
 </div>
+
+
+<!-- fin cuerpo modal -->
 
