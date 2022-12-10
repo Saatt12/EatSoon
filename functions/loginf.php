@@ -1,4 +1,5 @@
 
+<
 <?php 
 
     function createUser($con, $data){        

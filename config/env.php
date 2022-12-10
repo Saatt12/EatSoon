@@ -1,4 +1,5 @@
 <?php
+
     /** URL raiz del proyecto */ 
     Date_default_timezone_set("America/La_Paz");
     define('RUTA', 'https://eatsoonfinal.000webhostapp.com');
@@ -12,3 +13,4 @@ session_start();
     ];
     $proPage = 12;
 ?>
+

@@ -73,8 +73,10 @@ function agregarAlCarrito($con, $data)
 }
 function totalProductosEnCarrito($con, $data)
 {
+
     $code = $data["code"];
     if ($con && $data) {
+
         try {
 
             $query = $con->prepare("SELECT SUM(cantidad) AS total FROM carrito  WHERE code = '$code'");

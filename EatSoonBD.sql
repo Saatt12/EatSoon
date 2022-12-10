@@ -23,7 +23,7 @@ USE `eatsoon` ;
 -- -----------------------------------------------------
 -- Table `eatsoon`.`producto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `eatsoon`.`producto` (
+CREATE TABLE producto (
   `id_producto` INT(11) NOT NULL AUTO_INCREMENT,
   `fecha_publicacion` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   `nombre_producto` VARCHAR(45) NOT NULL,
@@ -111,8 +111,10 @@ CREATE TABLE IF NOT EXISTS `eatsoon`.`visita` (
   `token` CHARACTER NULL,
   `user` CHARACTER NOT NULL)
 ENGINE = InnoDB;
+
 ALTER TABLE eatsoon.pedido ADD estado varchar(100) NULL;
 ALTER TABLE eatsoon.producto ADD producto_usuario_id INTEGER NULL;
+
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

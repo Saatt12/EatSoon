@@ -46,7 +46,7 @@ function getProductoPage($con,$actual,$limite){
         $query->execute();
         $numeroProductos = count($query->fetchAll());
         if($numeroProductos > 60){
-            $query = $con->prepare("DELETE FROM producto WHERE id_producto = (SELECT MIN(id_producto) FROM producto)");
+            $query = $con->prepare("DELET FROM producto WHERE id_producto = (SELECT MIN(id_producto) FROM producto)");
             $query->execute();
         }
     }
@@ -106,5 +106,23 @@ function getProductoPage($con,$actual,$limite){
      function existeDescripcion($descripcion){
 
      }
+
+	function guardarTrigger($con){
+		$query1= "CREATE TRIGGER trigger
+    AFTER UPDATE ON clientes
+    FOR EACH ROW 
+    BEGIN
+        INSERT INTO tblauditabada (Apellido)
+        VALUES (OLD.Apellido)
+    END;";
+    $sql->query($query1);
+ 
+ 
+ 
+$query2= "UPDATE clientes
+    SET Apellido='{$apellido}'
+    WHERE identificacion='{$identificacion}'";
+    $res=$sql->query($query2);		
+	}
 
 ?>
